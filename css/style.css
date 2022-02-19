@@ -1,11 +1,11 @@
 /*fonts css start*/
 @font-face {
     font-family: 'YuMin-Medium';
-    src: url('YuMin-Medium.eot');
-    src: url('YuMin-Medium.eot?#iefix') format('embedded-opentype'),
-        url('YuMin-Medium.woff2') format('woff2'),
-        url('YuMin-Medium.woff') format('woff'),
-        url('YuMin-Medium.ttf') format('truetype');
+    src: url('../fonts/YuMin-Medium-AlphaNum.eot');
+    src: url('../fonts/YuMin-Medium-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YuMin-Medium-AlphaNum.woff2') format('woff2'),
+        url('../fonts/YuMin-Medium-AlphaNum.woff') format('woff'),
+        url('../fonts/YuMin-Medium-AlphaNum.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -13,11 +13,11 @@
 
 @font-face {
     font-family: 'YuMin-Demibold';
-    src: url('YuMin-Demibold.eot');
-    src: url('YuMin-Demibold.eot?#iefix') format('embedded-opentype'),
-        url('YuMin-Demibold.woff2') format('woff2'),
-        url('YuMin-Demibold.woff') format('woff'),
-        url('YuMin-Demibold.ttf') format('truetype');
+    src: url('../fonts/YuMin-Demibold-AlphaNum.eot');
+    src: url('../fonts/YuMin-Demibold-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YuMin-Demibold-AlphaNum.woff2') format('woff2'),
+        url('../fonts/YuMin-Demibold-AlphaNum.woff') format('woff'),
+        url('../fonts/YuMin-Demibold-AlphaNum.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -38,7 +38,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -font-smoothing: antialiased;
-    font-family: 'Yu Mincho';
+    font-family: 'YuMin-Medium';
 }
 body.no_scroll {
     overflow: hidden;
