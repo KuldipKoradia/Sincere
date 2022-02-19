@@ -1,36 +1,11 @@
 @font-face {
-    font-family: 'Snell Roundhand';
-    src: url('SnellRoundhand-BoldScript.eot');
-    src: url('SnellRoundhand-BoldScript.eot?#iefix') format('embedded-opentype'),
-        url('SnellRoundhand-BoldScript.woff2') format('woff2'),
-        url('SnellRoundhand-BoldScript.woff') format('woff'),
-        url('SnellRoundhand-BoldScript.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Yu Mincho';
-    src: url('YuMincho-Regular.eot');
-    src: url('YuMincho-Regular.eot?#iefix') format('embedded-opentype'),
-        url('YuMincho-Regular.woff2') format('woff2'),
-        url('YuMincho-Regular.woff') format('woff'),
-        url('YuMincho-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: '';
-    src: url('HiraKakuPro-W3-AlphaNum.eot');
-    src: url('HiraKakuPro-W3-AlphaNum.eot?#iefix') format('embedded-opentype'),
-        url('HiraKakuPro-W3-AlphaNum.woff2') format('woff2'),
-        url('HiraKakuPro-W3-AlphaNum.woff') format('woff'),
-        url('HiraKakuPro-W3-AlphaNum.ttf') format('truetype');
+    src: url('HiraMaruProN-W4-AlphaNum.eot');
+    src: url('HiraMaruProN-W4-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('HiraMaruProN-W4-AlphaNum.woff2') format('woff2'),
+        url('HiraMaruProN-W4-AlphaNum.woff') format('woff'),
+        url('HiraMaruProN-W4-AlphaNum.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-
