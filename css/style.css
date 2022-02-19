@@ -32,6 +32,17 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: '';
+    src: url('../fonts/HiraMaruProN-W4-AlphaNum.eot');
+    src: url('../fonts/HiraMaruProN-W4-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HiraMaruProN-W4-AlphaNum.woff2') format('woff2'),
+        url('../fonts/HiraMaruProN-W4-AlphaNum.woff') format('woff'),
+        url('../fonts/HiraMaruProN-W4-AlphaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 /*fonts css end*/
 
 /*common css start*/
@@ -85,6 +96,25 @@ img{
     .csp{
         display: block !important;
     }
+}
+.custom_row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+.custom_col_3 {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+}
+.custom_col_6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
 }
 /*common css end*/
 
@@ -346,7 +376,7 @@ header.site_header nav {
 }
 /*.banner section css end*/
 
-/*.lumekka section css start*/
+/*lumekka section css start*/
 .lumekka_section {
     padding: 50px 0;
 }
@@ -361,7 +391,9 @@ header.site_header nav {
     padding: 45px 60px 36px;
 }
 .lumekka_inner {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -389,7 +421,9 @@ header.site_header nav {
     font-size: 35px;
 }
 a.lumekka_blue {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -425,7 +459,9 @@ a.lumekka_blue span.btns_label span {
     font-size: 30px;
 }
 a.lumekka_red {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -462,4 +498,721 @@ a.lumekka_red p span {
     font-size: 20px;
     line-height: 32px;
 }
-/*.lumekka section css end*/
+/*lumekka section css end*/
+
+/*have such troubles section css start*/
+.have_such_troubles_section {
+    position: relative;
+    padding: 70px 0 257px;
+    z-index: 0;
+    background-image: url(../images/have_such_troubles_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.have_such_troubles_section .custom_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+.have_content {
+    position: relative;
+}
+.have_content h3 {
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+.have_content h3 span {
+    font-size: 50px;
+}
+.have_content .troubles_faces {
+    margin: 215px auto 0;
+}
+.msg_box_first {
+    background-image: url(../images/message_box_bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    text-align: center;
+    padding: 46px 25px 50px 35px;
+}
+.msg_box_first p {
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+}
+.msg_box_second {
+    background-image: url(../images/message_box_bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding: 46px 25px 48px 35px;
+    max-width: 320px;
+}
+.msg_box_second p {
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+}
+.msg_box_third {
+    background-image: url(../images/message_box_bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 160px;
+    right: 0;
+    text-align: center;
+    padding: 44px 25px 37px 35px;
+}
+.msg_box_third p {
+    font-size: 30px;
+    color: #fff;
+    line-height: 48px;
+}
+.msg_box_forth {
+    background-image: url(../images/message_box_bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 150px;
+    left: -20px;
+    text-align: center;
+    padding: 29px 25px 39px 35px;
+}
+.msg_box_forth p {
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+}
+.msg_box_fifth {
+    background-image: url(../images/message_box_bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 130px;
+    right: 16px;
+    text-align: center;
+    padding: 47px 25px 37px 23px;
+}
+.msg_box_fifth p {
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+}
+.msg_box_sixth {
+    background-image: url(../images/message_box_bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -78px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 64px 25px 59px;
+    max-width: 911px;
+    margin: auto;
+}
+.msg_box_sixth p {
+    font-size: 45px;
+    color: #fff;
+    line-height: 40px;
+}
+/*have such troubles section css end*/
+
+/*garden clinic section css start*/
+.garden_clinic_section {
+    margin-top: -138px;
+    z-index: 1;
+    position: relative;
+    padding-bottom: 95px;
+}
+.garden_clinic_section .custom_container {
+    width: 100%;
+    max-width: 955px;
+    margin: auto;
+    padding: 0 15px;
+}
+.garden_clinic_section h2 {
+    display: table;
+    margin: auto;
+    font-size: 55px;
+    color: #fff;
+    background-color: #c3af73;
+    padding: 0 14px;
+}
+.garden_clinic_section h3 {
+    font-size: 40px;
+    color: #950308;
+    text-align: center;
+    line-height: 70px;
+    position: relative;
+    margin: 60px 0 50px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+.garden_clinic_section h3 span {
+    font-size: 70px;
+}
+.garden_clinic_section h3 .garden_first {
+    position: absolute;
+    top: 0;
+    left: -34px;
+}
+.garden_clinic_section h3 .garden_second {
+    position: absolute;
+    right: -35px;
+    bottom: 0;
+}
+.garden_clinic_section p {
+    font-size: 40px;
+    color: #595959;
+    text-align: center;
+}
+.garden_clinic_section p span {
+    font-size: 60px;
+    position: relative;
+    display: table;
+    margin: auto;
+}
+.garden_clinic_section p span:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: rgb(225,215,185);
+    background: -moz-linear-gradient(90deg, rgba(225,215,185,1) 0%, rgba(202,187,137,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(225,215,185,1) 0%, rgba(202,187,137,1) 100%);
+    background: linear-gradient(90deg, rgba(225,215,185,1) 0%, rgba(202,187,137,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1d7b9",endColorstr="#cabb89",GradientType=1);
+}
+/*garden clinic section css end*/
+
+/*your stain section css start*/
+.your_stain_section {
+    background-color: #eeece5;
+    position: relative;
+    z-index: 1;
+    padding: 110px 0 80px;
+}
+.your_stain_section:before {
+    content: '';
+    position: absolute;
+    bottom: -318px;
+    left: 0;
+    right: 0;
+    height: 780px;
+    z-index: -1;
+    background-image: url(../images/your_stain_bottom_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.your_stain_section .custom_container {
+    width: 100%;
+    max-width: 1043px;
+    margin: auto;
+    padding: 0 25px;
+}
+.stain_content_float {
+    display: table;
+    text-align: center;
+    background-color: #c3af73;
+    padding: 0 20px;
+    border-radius: 38px;
+    margin: auto;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+}
+.stain_content_float:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 15px solid #c3af73;
+    z-index: 1;
+}
+.stain_content_float p {
+    font-size: 40px;
+    color: #fff;
+}
+.stain_content .custom_row {
+    margin: 0 -25px;
+    justify-content: center;
+}
+.stain_content .custom_col_3 {
+    padding: 0 25px;
+    margin-top: 30px;
+    display: -ms-flexbox;
+    display: flex;
+}
+.stain_content_box {
+    width: 100%;
+}
+.stain_heading {
+    min-height: 95px;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.stain_content_box h5 {
+    text-align: center;
+    font-size: 37px;
+    color: #595959;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.stain_content_box h5 span {
+    font-size: 22px;
+    display: block;
+    letter-spacing: -0.5px;
+    margin: 0 -24px;
+}
+.stain_image {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.stain_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+.stain_content_box p {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #000;
+    font-weight: 600;
+}
+.type_stains_content {
+    margin-top: 100px;
+}
+.type_stains_content h3 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 55px;
+    line-height: 80px;
+    background: #B27122;
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #B27122 0%, #5a3b1c 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #B27122 0%, #5a3b1c 100%);
+    background: radial-gradient(circle farthest-corner at center center, #B27122 0%, #5a3b1c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.type_stains_content p {
+    text-align: center;
+    font-size: 40px;
+    color: #595959;
+}
+/*your stain section css end*/
+
+/*people section css start*/
+.people_section {
+    padding: 70px 0;
+    background-image: url(../images/recommended_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.people_section .custom_container {
+    width: 100%;
+    max-width: 1099px;
+    padding: 0 12px;
+    margin: auto;
+}
+.people_section h3 {
+    text-align: center;
+    font-size: 60px;
+    color: #950308;
+    font-weight: 500;
+    margin-bottom: 120px;
+}
+.people_section .custom_row {
+    margin: 0 -12px;
+}
+
+.people_section .custom_col_6 {
+    padding: 0 12px;
+    display: flex;
+}
+.people_image {
+    width: 100%;
+    position: relative;
+    padding-top: 66.1%;
+    margin: 0 18px 18px 0;
+}
+.people_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.people_image:before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: -18px;
+    bottom: -18px;
+    background-color: #950308;
+}
+.people_text {
+    position: relative;
+}
+.people_text a {
+    font-size: 45px;
+    color: #595959;
+    padding: 0 40px;
+    display: table;
+    position: absolute;
+    top: -95px;
+    right: 79px;
+    transform: rotate(12deg);
+}
+.people_text a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 31px;
+    height: 50px;
+    margin: auto;
+    background-image: url('../images/pepole_image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.people_text a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 31px;
+    height: 50px;
+    margin: auto;
+    background-image: url('../images/pepole_image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+}
+.people_text_col {
+    min-height: 175px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 5px;
+}
+.people_text .custom_row {
+    margin: 0 -5px;
+}
+.people_text .custom_col_3 {
+    padding: 0 5px;
+}
+.people_text_col p {
+    font-size: 23px;
+    color: #595959;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+}
+/*people section css end*/
+
+/*spot treatment section css start*/
+.spot_treatment_section {
+    padding: 98px 0;
+    background-color: #e6dcbe;
+}
+.spot_treatment_section  .custom_container {
+    width: 100%;
+    max-width: 1110px;
+    padding: 0 15px;
+    margin: auto;
+}
+.spot_treatment_section .heading {
+    text-align: center;
+    color: #950308;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.spot_treatment_section .heading span {
+    display: block;
+    font-size: 60px;
+}
+.spot_content_sec {
+    background-color: #fff;
+}
+.spot_content_sec .spot_heading {
+    background-color: #950308;
+    padding: 12px 38px 0px;
+}
+.spot_heading .custom_row {
+    margin: 0 -19px;
+    align-items: center;
+}
+.spot_heading .custom_col_label {
+    -ms-flex: 0 0 368px;
+    flex: 0 0 368px;
+    max-width: 368px;
+    padding: 0 19px;
+}
+.spot_heading .custom_col_content {
+    -ms-flex: 0 0 calc(100% - 368px);
+    flex: 0 0 calc(100% - 368px);
+    max-width: calc(100% - 368px);
+    padding: 0 19px;
+}
+ul.spot_label {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -8px;
+}
+ul.spot_label li {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 8px 8px;
+}
+ul.spot_label li a {
+    text-align: center;
+    min-width: 157px;
+    height: 58px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 2px;
+}
+.spot_heading_text h2 {
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    background: #CABB89;
+    background: -webkit-linear-gradient(to top, #CABB89 40%, #F2E7C7 50%, #CABB89 60%);
+    background: -moz-linear-gradient(to top, #CABB89 40%, #F2E7C7 50%, #CABB89 60%);
+    background: linear-gradient(to top, #CABB89 40%, #F2E7C7 50%, #CABB89 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    line-height: 81px;
+}
+.spot_heading_text h2 span {
+    font-size: 45px;
+}
+.spot_heading_text ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.spot_heading_text ul li p {
+    font-size: 40px;
+    color: #fff;
+    background-color: #c3af73;
+    line-height: 53px;
+    padding: 6px 22px;
+}
+.spot_heading_text ul li h1 {
+    font-size: 87px;
+    color: #fff;
+    line-height: 115px;
+}
+.spot_heading_text ul li h1 span.text_mediam {
+    font-size: 49px;
+}
+.spot_heading_text ul li h1 span.text_small {
+    font-size: 25px;
+    width: 30px;
+    display: inline-block;
+    margin-left: 6px;
+    line-height: normal;
+}
+.spot_content {
+    padding: 56px 56px;
+}
+.spot_phototherapy p {
+    text-align: center;
+    font-size: 35px;
+    color: #595959;
+    line-height: 60px;
+}
+.spot_phototherapy p span {
+    background-color: #950308;
+    color: #fff;
+    padding: 2px 15px;
+}
+.spot_content_image {
+    width: 100%;
+    max-width: 640px;
+    margin: 40px auto;
+    padding: 0 14px 14px 0;
+}
+.spot_image_inner {
+    position: relative;
+    padding-top: 68.1%;
+}
+.spot_image_inner:before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    right: -14px;
+    bottom: -14px;
+    background-color: #c3af73;
+}
+.spot_image_inner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.spot_point li {
+    position: relative;
+    padding-left: 190px;
+    border-top: 2px solid #c3af73;
+    margin-bottom: 45px;
+}   
+.spot_point li > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 175px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 30px;
+    background-color: #c3af73;
+    color: #fff;
+    text-align: center;
+}
+.spot_point li > span span {
+    font-size: 35px;
+}
+.spot_point li p {
+    font-size: 25px;
+    color: #595959;
+    font-weight: 600;
+}
+.insert_video {
+    width: 100%;
+    max-width: 747px;
+    margin: auto;
+    text-align: center;
+    height: 341px;
+    line-height: 341px;
+    border: 1px solid #595959;
+}
+.insert_video p {
+    font-size: 40px;
+    font-weight: 600;
+    color: #595959;
+}
+.freckles_content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.doctor_comment {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 48px;
+}   
+.doctor_comment_inner {
+    padding: 0 20px;
+    position: relative;
+}
+.doctor_comment p {
+    color: #c3af73;
+    font-size: 30px;
+    font-family: 'Snell Roundhand';
+    transform: rotate(341deg);
+    line-height: 26px;
+}
+.doctor_comment img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+}
+.freckles_text {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-end;
+}
+.freckles_text h2 {
+    font-size: 40px;
+    color: #950308;
+    letter-spacing: -0.2px;
+}
+/*spot treatment section css end*/
