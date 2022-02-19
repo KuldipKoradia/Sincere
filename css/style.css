@@ -254,3 +254,135 @@ img{
 }
 /*animations css end*/
 
+/*header css start*/
+header.site_header {
+    padding: 20px 0;
+    background-color: #fff;
+}
+header.site_header nav {
+    width: 100%;
+    max-width: 1088px;
+    margin: auto;
+    padding: 0 15px;
+}
+/*header css end*/
+
+/*.banner section css start*/
+.banner_section {
+    background-image: url(../images/banner_bg_image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 35px 0;
+}
+.banner_section .custom_container {
+    width: 100%;
+    max-width: 1230px;
+    margin: auto;
+    padding: 0 15px;
+}
+.banner_image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    max-width: 827px;
+    z-index: 0;
+}
+.banner_content {
+    margin-left: auto;
+    display: table;
+    position: relative;
+    z-index: 1;
+}
+.banner_content p {
+    font-size: 37px;
+    line-height: 54px;
+    color: #4c4c4c;
+}
+.banner_content h2 {
+    font-size: 55px;
+    line-height: 85px;
+    color: #4c4c4c;
+    font-weight: 300;
+    margin: 30px 0 25px;
+}
+.banner_content h2 span {
+    display: table;
+    margin-left: auto;
+    font-size: 75px;
+}
+/*.banner section css end*/
+
+/*.lumekka section css start*/
+.lumekka_section {
+    padding: 50px 0;
+}
+.lumekka_section .custom_container {
+    width: 100%;
+    max-width: 1004px;
+    margin: auto;
+    padding: 0 15px;
+}
+.lumekka_sec {
+    border: 10px solid #e1d7b9;
+    padding: 45px 60px 36px;
+}
+.lumekka_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.lumekka_inner p {
+    font-size: 40px;
+    color: #c3af73;
+}
+.lumekka_inner p span {
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #950308;
+}
+.lumekka_inner h1 {
+    font-size: 125px;
+    color: #950308;
+    line-height: 141px;
+}
+.lumekka_inner h1 span.text_mediam {
+    font-size: 70px;
+}
+.lumekka_inner h1 span.text_small {
+    font-size: 35px;
+}
+.lumekka_red {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    line-height: 108px;
+    background: rgb(89,121,203);
+    color: #fff;
+    padding: 0 40px;
+    border-radius: 54px;
+    background: -moz-linear-gradient(90deg, rgba(89,121,203,1) 0%, rgba(79,107,178,1) 30%, rgba(89,121,203,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(89,121,203,1) 0%, rgba(79,107,178,1) 30%, rgba(89,121,203,1) 100%);
+    background: linear-gradient(90deg, rgba(89,121,203,1) 0%, rgba(79,107,178,1) 30%, rgba(89,121,203,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5979cb",endColorstr="#5979cb",GradientType=1);
+    /*box-shadow: inset 0 0 10px #000000,
+                inset 0 0 10px #ffffff;*/
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.50), 
+                inset 0 -10px 10px -5px rgba(0, 0, 0, 0.50);
+}
+a.lumekka_red span.btns_label {
+    font-size: 35px;
+    color: #fff;
+    background-color: #c3af74;
+    line-height: 48px;
+    padding: 0px 10px;
+}
+a.lumekka_red span.btns_label span {
+    font-size: 30px;
+}
+/*.lumekka section css end*/
