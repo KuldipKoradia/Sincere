@@ -1,24 +1,23 @@
 /*fonts css start*/
 @font-face {
-    font-family: 'YuMin-Medium';
-    src: url('../fonts/YuMin-Medium-AlphaNum.eot');
-    src: url('../fonts/YuMin-Medium-AlphaNum.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/YuMin-Medium-AlphaNum.woff2') format('woff2'),
-        url('../fonts/YuMin-Medium-AlphaNum.woff') format('woff'),
-        url('../fonts/YuMin-Medium-AlphaNum.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+    font-family: 'Snell Roundhand';
+    src: url('../fonts/SnellRoundhand-BoldScript.eot');
+    src: url('../fonts/SnellRoundhand-BoldScript.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SnellRoundhand-BoldScript.woff2') format('woff2'),
+        url('../fonts/SnellRoundhand-BoldScript.woff') format('woff'),
+        url('../fonts/SnellRoundhand-BoldScript.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
     font-display: swap;
 }
-
 @font-face {
-    font-family: 'YuMin-Demibold';
-    src: url('../fonts/YuMin-Demibold-AlphaNum.eot');
-    src: url('../fonts/YuMin-Demibold-AlphaNum.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/YuMin-Demibold-AlphaNum.woff2') format('woff2'),
-        url('../fonts/YuMin-Demibold-AlphaNum.woff') format('woff'),
-        url('../fonts/YuMin-Demibold-AlphaNum.ttf') format('truetype');
-    font-weight: 600;
+    font-family: 'Yu Mincho';
+    src: url('../fonts/YuMincho-Regular.eot');
+    src: url('../fonts/YuMincho-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YuMincho-Regular.woff2') format('woff2'),
+        url('../fonts/YuMincho-Regular.woff') format('woff'),
+        url('../fonts/YuMincho-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -38,7 +37,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -font-smoothing: antialiased;
-    font-family: 'YuMin-Medium';
+    font-family: 'Yu Mincho';
 }
 body.no_scroll {
     overflow: hidden;
@@ -46,7 +45,7 @@ body.no_scroll {
 a, button, input[type=submit], select{
     cursor: pointer;
 }
-a, a:hover, a:focus, 
+a, a:focus, 
 button, button:hover, button:focus,
 input, input:hover, input:focus, 
 textarea, textarea:hover, textarea:focus,
@@ -369,7 +368,8 @@ header.site_header nav {
 .lumekka_inner h1 {
     font-size: 125px;
     color: #950308;
-    line-height: 141px;
+    line-height: 104px;
+    font-weight: 900;
 }
 .lumekka_inner h1 span.text_mediam {
     font-size: 70px;
@@ -377,7 +377,7 @@ header.site_header nav {
 .lumekka_inner h1 span.text_small {
     font-size: 35px;
 }
-.lumekka_blue {
+a.lumekka_blue {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -386,6 +386,7 @@ header.site_header nav {
     height: 108px;
     color: #fff;
     padding: 0 40px;
+    margin: 40px 0;
     border-radius: 54px;
     background: rgb(89,121,203);
     background: -moz-linear-gradient(90deg, rgba(89,121,203,1) 0%, rgba(79,107,178,1) 30%, rgba(89,121,203,1) 100%);
@@ -395,6 +396,12 @@ header.site_header nav {
     box-shadow: inset 0px 8px 20px  0 rgba(255, 255, 255, 0.50), 
                 inset 0px -8px 20px  0px rgba(0, 0, 0, 0.50);
     position: relative;
+    transition: all 0.4s;
+}
+a.lumekka_red:hover,
+a.lumekka_blue:hover {
+    box-shadow: inset 0px 8px 20px  0 rgba(0, 0, 0, 0.50), 
+                inset 0px -8px 20px  0px rgba(255, 255, 255, 0.50);
 }
 a.lumekka_blue span.btns_label {
     font-size: 35px;
@@ -406,16 +413,14 @@ a.lumekka_blue span.btns_label {
 a.lumekka_blue span.btns_label span {
     font-size: 30px;
 }
-.lumekka_red {
-/*    display: flex;
+a.lumekka_red {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    font-size: 40px;*/
-    display: block;
     height: 108px;
     color: #fff;
-    padding: 0 40px;
+    padding: 0 60px 0 40px;
     border-radius: 54px;
     background: rgb(195,127,128);
     background: -moz-linear-gradient(90deg, rgba(195,127,128,1) 0%, rgba(178,89,91,1) 30%, rgba(195,127,128,1) 100%);
@@ -425,12 +430,25 @@ a.lumekka_blue span.btns_label span {
     box-shadow: inset 0px 8px 20px  0 rgba(255, 255, 255, 0.50), 
                 inset 0px -8px 20px  0px rgba(0, 0, 0, 0.50);
     position: relative;
+    transition: all 0.4s;
 }
 a.lumekka_red span.btns_label {
-    font-size: 35px;
+    font-size: 26px;
     color: #fff;
     background-color: #c3af74;
-    line-height: 41px;
-    padding: 8px 10px 0px 10px;
+    line-height: 37px;
+    padding: 4px 6px 4px 6px;
+    display: table;
+}
+a.lumekka_red p {
+    font-size: 60px;
+    text-align: center;
+    line-height: 53px;
+    padding-top: 9px;
+}
+a.lumekka_red p span {
+    display: block;
+    font-size: 20px;
+    line-height: 32px;
 }
 /*.lumekka section css end*/
