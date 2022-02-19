@@ -21,6 +21,17 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: '';
+    src: url('../fonts/HiraKakuPro-W3-AlphaNum.eot');
+    src: url('../fonts/HiraKakuPro-W3-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HiraKakuPro-W3-AlphaNum.woff2') format('woff2'),
+        url('../fonts/HiraKakuPro-W3-AlphaNum.woff') format('woff'),
+        url('../fonts/HiraKakuPro-W3-AlphaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 /*fonts css end*/
 
 /*common css start*/
