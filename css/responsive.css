@@ -117,23 +117,70 @@
 	background-color: #c3af74;
 }
 .single_faq .single_faq_question h4 {
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 30px;
 	color: #ffffff;
-	padding-left: 35px;
+	padding-left: 50px;
 	position: relative;
+	font-weight: 500;
 }
-.single_faq .single_faq_question h4 {
+.single_faq .single_faq_question h4:before {
+	content: "Q .";
 	position: absolute;
 	left: 0;
 }
 .single_faq .single_faq_answer {
-	padding: 45px 35px 35px 75px;
-	background-color: #ffffff;
+    padding: 45px 35px 35px 130px;
+    background-color: #ffffff;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.single_faq .single_faq_answer:before {
+    content: "A .";
+    position: absolute;
+    left: 85px;
+    top: 45px;
+    font-family: 'HiraKakuPro-W3';
+    font-size: 25px;
+    line-height: 50px;
+    color: #595959;
+    font-weight: 300;
 }
 .single_faq .single_faq_answer li,
 .single_faq .single_faq_answer p {
 	font-family: 'HiraKakuPro-W3';
 	font-size: 25px;
 	color: #595959;
+	font-weight: 300;
+	line-height: 50px;
+}
+.single_faq .single_faq_answer li {
+	padding-left: 37px;
+	line-height: 40px;
+	counter-increment: points;
+	position: relative;
+}
+.single_faq .single_faq_answer li:before {
+    content: counter(points);
+    width: 25px;
+    height: 25px;
+    font-family: 'HiraKakuPro-W3';
+    line-height: 34px;
+    font-size: 25px;
+    color: #595959;
+    font-weight: 300;
+    border: 1px solid #595959;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+.single_faq .single_faq_answer a.pdf_button {
+    float: right;
+    margin-top: -35px;
 }
 /*faq section css end*/
