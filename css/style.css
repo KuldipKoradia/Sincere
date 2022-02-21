@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
 /*fonts css start*/
 /*font-family: a-otf-ryumin-pr6n,serif;
 font-weight: 300;
-font-style: normal;*/
+font-style: normal;
 
-/*font-family: vdl-pengentle,sans-serif;
+font-family: vdl-pengentle,sans-serif;
 font-weight: 700;
 font-style: normal;*/
 @font-face {
@@ -395,13 +396,15 @@ header.site_header nav {
 }
 .lumekka_section .custom_container {
     width: 100%;
-    max-width: 1004px;
+    max-width: 1104px;
     margin: auto;
     padding: 0 15px;
 }
 .lumekka_sec {
     border: 10px solid #e1d7b9;
     padding: 45px 60px 36px;
+    max-width: 974px;
+    margin: auto;
 }
 .lumekka_inner {
     display: -ms-flexbox;
@@ -510,6 +513,38 @@ a.lumekka_red p span {
     display: block;
     font-size: 20px;
     line-height: 32px;
+}
+
+.spots_btn a {
+    background-color: #e3d6c5;
+    margin: 0;
+    align-items: center;
+    padding: 36px;
+    border-radius: 30px;
+    margin-bottom: 120px;
+}
+.spots_btn a .insta_icon {
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px;
+    max-width: 120px;
+}
+.spots_btn a .spots_btn_content {
+    -ms-flex: 0 0 calc(100% - 120px);
+    flex: 0 0 calc(100% - 120px);
+    max-width: calc(100% - 120px);
+    padding: 0 0 0 52px;
+}
+.spots_btn a .spots_btn_content p {
+    text-align: center;
+    font-size: 45px;
+    color: #000000;
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.spots_btn a .spots_btn_content img {
+    margin: 19px auto 0;
+    max-width: 246px;
 }
 /*lumekka section css end*/
 
@@ -984,7 +1019,7 @@ a.lumekka_red p span {
 
 /*spot treatment section css start*/
 .spot_treatment_section {
-    padding: 98px 0;
+    padding: 98px 0 30px;
     background-color: #e6dcbe;
 }
 .spot_treatment_section  .custom_container {
@@ -1006,10 +1041,11 @@ a.lumekka_red p span {
 }
 .spot_content_sec {
     background-color: #fff;
+    margin-bottom: 110px;
 }
 .spot_content_sec .spot_heading {
     background-color: #950308;
-    padding: 12px 38px 0px;
+    padding: 12px 38px 6px;
 }
 .spot_heading .custom_row {
     margin: 0 -19px;
@@ -1092,6 +1128,7 @@ ul.spot_label li a {
     font-size: 87px;
     color: #fff;
     line-height: 115px;
+    font-weight: 500;
 }
 .spot_heading_text ul li h1 span.text_mediam {
     font-size: 49px;
@@ -1153,6 +1190,7 @@ ul.spot_label li a {
     padding-left: 190px;
     border-top: 2px solid #c3af73;
     margin-bottom: 45px;
+    padding-top: 10px;
 }   
 .spot_point li > span {
     position: absolute;
@@ -1332,5 +1370,53 @@ ul.spot_label li a {
 }
 .spot_table_sec.spot_table_second_sec .spot_table {
     margin: 0 auto;
+}
+.treatment_course_sec {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 3px solid #c3af73;
+    margin: 60px 0px;
+}
+.treatment_course_sec h2 {
+    font-size: 40px;
+    color: #950308;
+    line-height: 70px;
+    padding-left: 12px;
+}
+.treatment_course_sec h2 span {
+    font-size: 60px;
+}
+.spot_content_sec.all_faces_box .spot_heading_text h2 {
+    letter-spacing: -7.9px;
+}
+.spot_content_sec.all_faces_box .spot_heading_text h2 span {
+    letter-spacing: 0;
+}
+.spot_image_sec img {
+    margin: auto;
+}
+.laser_once_box ul.spot_label li {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.laser_once_box ul.spot_label li a {
+    width: 281px;
+    height: 103px;
+    border-radius: 20px;
+    font-size: 54px;
+    margin: auto;
+}
+.spot_content_sec.laser_once_box .spot_heading_text ul li h1 {
+    line-height: 1.2;
+}
+.laser_once_box .spot_heading_text ul li p {
+    background-color: transparent;
+    padding: 0;
+    font-size: 50px;
 }
 /*spot treatment section css end*/
