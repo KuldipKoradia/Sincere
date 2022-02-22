@@ -12,9 +12,9 @@ font-style: normal;*/
     font-family: 'Snell Roundhand';
     src: url('../fonts/SnellRoundhand-BoldScript.eot');
     src: url('../fonts/SnellRoundhand-BoldScript.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/SnellRoundhand-BoldScript.woff2') format('woff2'),
-        url('../fonts/SnellRoundhand-BoldScript.woff') format('woff'),
-        url('../fonts/SnellRoundhand-BoldScript.ttf') format('truetype');
+    url('../fonts/SnellRoundhand-BoldScript.woff2') format('woff2'),
+    url('../fonts/SnellRoundhand-BoldScript.woff') format('woff'),
+    url('../fonts/SnellRoundhand-BoldScript.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -23,9 +23,9 @@ font-style: normal;*/
     font-family: 'Yu Mincho';
     src: url('../fonts/YuMincho-Regular.eot');
     src: url('../fonts/YuMincho-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/YuMincho-Regular.woff2') format('woff2'),
-        url('../fonts/YuMincho-Regular.woff') format('woff'),
-        url('../fonts/YuMincho-Regular.ttf') format('truetype');
+    url('../fonts/YuMincho-Regular.woff2') format('woff2'),
+    url('../fonts/YuMincho-Regular.woff') format('woff'),
+    url('../fonts/YuMincho-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -34,9 +34,9 @@ font-style: normal;*/
     font-family: 'HiraKakuPro-W3';
     src: url('../fonts/HiraKakuPro-W3-AlphaNum.eot');
     src: url('../fonts/HiraKakuPro-W3-AlphaNum.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/HiraKakuPro-W3-AlphaNum.woff2') format('woff2'),
-        url('../fonts/HiraKakuPro-W3-AlphaNum.woff') format('woff'),
-        url('../fonts/HiraKakuPro-W3-AlphaNum.ttf') format('truetype');
+    url('../fonts/HiraKakuPro-W3-AlphaNum.woff2') format('woff2'),
+    url('../fonts/HiraKakuPro-W3-AlphaNum.woff') format('woff'),
+    url('../fonts/HiraKakuPro-W3-AlphaNum.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -45,9 +45,9 @@ font-style: normal;*/
     font-family: 'HiraMaruProN-W4';
     src: url('../fonts/HiraMaruProN-W4-AlphaNum.eot');
     src: url('../fonts/HiraMaruProN-W4-AlphaNum.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/HiraMaruProN-W4-AlphaNum.woff2') format('woff2'),
-        url('../fonts/HiraMaruProN-W4-AlphaNum.woff') format('woff'),
-        url('../fonts/HiraMaruProN-W4-AlphaNum.ttf') format('truetype');
+    url('../fonts/HiraMaruProN-W4-AlphaNum.woff2') format('woff2'),
+    url('../fonts/HiraMaruProN-W4-AlphaNum.woff') format('woff'),
+    url('../fonts/HiraMaruProN-W4-AlphaNum.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -406,6 +406,7 @@ header.site_header nav {
 /*lumekka section css start*/
 .lumekka_section {
     padding: 50px 0;
+    overflow: hidden;
 }
 .lumekka_section .custom_container {
     width: 100%;
@@ -468,14 +469,14 @@ a.lumekka_blue {
     background: linear-gradient(90deg, rgba(89,121,203,1) 0%, rgba(79,107,178,1) 30%, rgba(89,121,203,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5979cb",endColorstr="#5979cb",GradientType=1);
     box-shadow: inset 0px 8px 20px  0 rgba(255, 255, 255, 0.50), 
-                inset 0px -8px 20px  0px rgba(0, 0, 0, 0.50);
+    inset 0px -8px 20px  0px rgba(0, 0, 0, 0.50);
     position: relative;
     transition: all 0.4s;
 }
 a.lumekka_red:hover,
 a.lumekka_blue:hover {
     box-shadow: inset 0px 8px 20px  0 rgba(0, 0, 0, 0.50), 
-                inset 0px -8px 20px  0px rgba(255, 255, 255, 0.50);
+    inset 0px -8px 20px  0px rgba(255, 255, 255, 0.50);
 }
 a.lumekka_blue span.btns_label {
     font-size: 35px;
@@ -504,7 +505,7 @@ a.lumekka_red {
     background: linear-gradient(90deg, rgba(195,127,128,1) 0%, rgba(178,89,91,1) 30%, rgba(195,127,128,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c37f80",endColorstr="#c37f80",GradientType=1);
     box-shadow: inset 0px 8px 20px  0 rgba(255, 255, 255, 0.50), 
-                inset 0px -8px 20px  0px rgba(0, 0, 0, 0.50);
+    inset 0px -8px 20px  0px rgba(0, 0, 0, 0.50);
     position: relative;
     transition: all 0.4s;
 }
@@ -1160,7 +1161,7 @@ ul.spot_label li a {
 .spot_heading_text ul li h1 {
     font-size: 87px;
     color: #fff;
-    line-height: 115px;
+    line-height: 1.3;
     font-weight: 500;
 }
 .spot_heading_text ul li h1 span.text_mediam {
@@ -1269,6 +1270,7 @@ ul.spot_label li a {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
 .spot_content .freckles_content {
     padding-top: 30px;
@@ -1418,6 +1420,7 @@ ul.spot_label li a {
     justify-content: space-between;
     border-bottom: 3px solid #c3af73;
     margin: 60px 0px;
+    position: relative;
 }
 .treatment_course_sec h2 {
     font-size: 40px;
@@ -1640,7 +1643,7 @@ ul.spot_label li a {
 }
 .resion_forth_sec h4,
 .resion_second_sec h4 {
-    padding-left: 0;
+    padding-left: 0 !important;
     padding-right: 120px;
 }
 .resion_forth_sec h4 span,
@@ -1657,7 +1660,7 @@ ul.spot_label li a {
 }
 .resion_forth_sec p.resion_text,
 .resion_second_sec p.resion_text {
-    left: auto;
+    left: auto !important;
     right: -55px;
 }
 .resion_text ul li {
@@ -2435,6 +2438,654 @@ ul.spot_label li a {
     .people_text {
         position: relative;
         margin-top: 140px;
+    }
+    .spot_treatment_section {
+        padding: 60px 0 30px;
+    }
+    .spot_treatment_section .heading {
+        font-size: 38px;
+        margin-bottom: 60px;
+    }
+    .spot_treatment_section .heading span {
+        font-size: 46px;
+    }
+    ul.spot_label li a {
+        min-width: 128px;
+        font-size: 22px;
+    }
+    .spot_content_sec .spot_heading {
+        padding: 12px 16px 6px;
+    }
+    .spot_heading .custom_col_label {
+        -ms-flex: 0 0 310px;
+        flex: 0 0 310px;
+        max-width: 310px;
+    }
+    .spot_heading .custom_col_content {
+        -ms-flex: 0 0 calc(100% - 310px);
+        flex: 0 0 calc(100% - 310px);
+        max-width: calc(100% - 310px);
+    }
+    .spot_heading_text h2 {
+        font-size: 46px;
+        line-height: 81px;
+    }
+    .spot_heading_text h2 span {
+        font-size: 40px;
+    }
+    .spot_heading_text ul li p {
+        font-size: 26px;
+        line-height: 44px;
+        padding: 6px 14px;
+    }
+    .spot_heading_text ul li h1 {
+        font-size: 72px;
+    }
+    .spot_heading_text ul li h1 span.text_mediam {
+        font-size: 40px;
+    }
+    .spot_heading_text ul li h1 span.text_small {
+        font-size: 20px;
+        width: 20px;
+    }
+    .spot_content {
+        padding: 40px 40px;
+    }
+    .spot_phototherapy p {
+        font-size: 28px;
+        line-height: 60px;
+    }
+    .spot_point li > span {
+        min-width: 150px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 24px;
+    }
+    .spot_point li {
+        padding-left: 170px;
+    }
+    .spot_point li p {
+        font-size: 20px;
+    }
+    .spot_point li > span span {
+        font-size: 30px;
+    }
+    .doctor_comment p {
+        font-size: 24px;
+        transform: rotate(341deg);
+        line-height: 20px;
+    }
+    .doctor_comment img {
+        left: 2px;
+        bottom: -24px;
+    }
+    .freckles_text h2 {
+        font-size: 30px;
+    }
+    .freckles_image img {
+        max-width: 105px;
+        position: absolute;
+        top: 5px;
+        right: 2px;
+    }
+    .spot_after_images .custom_col_6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .spot_after_images .custom_col_6:not(:last-child):before {
+        right: -15px;
+        border-top: 20px solid transparent;
+        border-left: 30px solid #c3af73;
+        border-bottom: 20px solid transparent;
+    }
+    .spot_images_second .spot_images {
+        max-width: 330px;
+    }
+    .treatment_course_sec {
+        margin: 40px 0px;
+    }
+    .treatment_course_sec h2 {
+        font-size: 32px;
+        line-height: 70px;
+    }
+    .treatment_course_sec img {
+        max-width: 142px;
+    }
+    .spots_btn a {
+        padding: 28px;
+        margin: 0 0 90px !important;
+    }
+    .spots_btn a .insta_icon {
+        -ms-flex: 0 0 110px;
+        flex: 0 0 110px;
+        max-width: 110px;
+    }
+    .spots_btn a .spots_btn_content {
+        -ms-flex: 0 0 calc(100% - 110px);
+        flex: 0 0 calc(100% - 110px);
+        max-width: calc(100% - 110px);
+        padding: 0 0 0 20px;
+    }
+    .spots_btn a .spots_btn_content p {
+        font-size: 36px;
+    }
+    .resion_section {
+        padding: 70px 0 170px;
+    }
+    .resion_section h3 {
+        font-size: 36px;
+        margin-bottom: 90px;
+    }
+    .resion_section h3 .big_text {
+        font-size: 100px;
+    }
+    .resion_content_sec h4 span {
+        font-size: 38px;
+        width: 90px;
+        top: -24px;
+    }
+    .resion_content_sec h4 {
+        font-size: 38px;
+        padding-left: 105px;
+    }
+    .resion_heading_inner {
+        padding-left: 105px;
+        margin: 18px 0 50px;
+        min-height: 112px;
+    }
+    .resion_heading p.resion_text {
+        font-size: 38px;
+        left: -14px;
+        bottom: -9px;
+    }
+    .resion_heading p.heading_content {
+        font-size: 28px;
+    }
+    .resion_forth_sec .resion_heading:before, 
+    .resion_second_sec .resion_heading:before,
+    .resion_fifth_sec .resion_heading:before, 
+    .resion_third_sec .resion_heading:before, 
+    .resion_first_sec .resion_heading:before {
+        top: 72px;
+        height: 115px;
+    }
+    .resion_content_sec .custom_col_image {
+        -ms-flex: 0 0 730px;
+        flex: 0 0 730px;
+        max-width: 730px;
+        padding: 0 15px;
+    }
+    .resion_content_sec .custom_col_text {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+    .resion_forth_sec h4, 
+    .resion_second_sec h4,
+    .resion_forth_sec .resion_heading_inner, 
+    .resion_second_sec .resion_heading_inner {
+        padding-right: 105px;
+    }
+    .resion_fifth_sec .resion_heading, .resion_third_sec .resion_heading, .resion_first_sec .resion_heading {
+        padding-left: calc((100% - 900px) / 2);
+    }
+    .resion_forth_sec .resion_heading, .resion_second_sec .resion_heading {
+        padding-left: 20px;
+        padding-right: calc((100% - 900px) / 2);
+    }
+    .resion_forth_sec p.resion_text, .resion_second_sec p.resion_text {
+     right: -42px;
+ }
+ .introduction_section,
+ .treatment_steps_section {
+    padding: 80px 0px;
+}
+.step_listing .step_description {
+    padding: 30px 0 0 90px;
+}
+.introduction_section > h3,
+.faq_section h3,
+.treatment_steps_section h3 {
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.step_listing h4 span {
+    left: -40px;
+}
+.step_listing li:before {
+    left: 25px;
+    height: 76px;
+    font-size: 48px;
+}
+.step_listing h4 {
+    padding-bottom: 18px;
+}
+.single_faq .single_faq_answer {
+    padding: 45px 35px 35px 102px;
+}
+.single_faq .single_faq_answer:before {
+    left: 60px;
+}
+.shine_image_sec h5 {
+    font-size: 28px;
+}
+.cynthia_sec .custom_col_map,
+.director_box_sec .custom_col_image {
+    margin: auto;
+}
+.cynthia_sec .custom_col_text,
+.director_box_sec .custom_col_text {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 50px;
+}
+.director_box_sec .heading p {
+    font-size: 20px;
+}
+.director_box_sec .heading h4 {
+    font-size: 38px;
+}
+.director_box_sec .heading h6 {
+    font-size: 20px;
+}
+.cynthia_text p,
+.director_content p {
+    font-size: 22px;
+}
+.benefits_btns_sec .heading {
+    padding: 8px 30px;
+}
+.benefits_btns_sec .heading h2 {
+    font-size: 38px;
+    line-height: 70px;
+}
+.benefits_btns_sec .benefits_btns {
+    padding: 20px 25px 26px;
+}
+.benefits_btns_sec .benefits_btns a.line_text {
+    font-size: 28px;
+}
+.benefits_btns_sec .benefits_btns a.line_btn {
+    min-width: 240px;
+    height: 70px;
+    padding: 10px;
+    font-size: 24px;
+}
+.introduction_section .lumekka_sec .heading h2 {
+    font-size: 38px;
+}
+.introduction_section .lumekka_sec .lumekka_inner h3 {
+    font-size: 28px;
+}
+.introduction_section .lumekka_sec .lumekka_btns {
+    padding: 0 40px 40px;
+}
+.coptright_sec p {
+    font-size: 20px;
+    margin-top: 60px;
+}
+}
+@media(max-width: 900px) {
+    a.header_logo img {
+        max-width: 180px;
+    }
+    .banner_section {
+        padding: 0 0 15px;
+    }
+    .banner_image {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+    .banner_content {
+        display: block;
+    }
+    .banner_content p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .banner_content h2 {
+        font-size: 28px;
+        margin: 0 0 10px;
+        max-width: 340px;
+        margin: auto;
+    }    .banner_content h2 span {
+        font-size: 38px;
+    }
+    .banner_content img {
+        max-width: 380px;
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+    .lumekka_sec {
+        padding: 15px;
+        max-width: 750px;
+        border: 4px solid #e1d7b9;
+    }
+    .lumekka_inner p {
+        font-size: 16px;
+    }
+    .lumekka_inner h1 {
+        font-size: 45px;
+    }
+    .lumekka_inner h1 span.text_mediam {
+        font-size: 26px;
+    }
+    .lumekka_inner h1 span.text_small {
+        font-size: 18px;
+    }
+    .have_content h3 {
+        font-size: 34px;
+    }
+    .have_content h3 span {
+        font-size: 28px;
+    }
+    .msg_box_fifth p, .msg_box_forth p, .msg_box_third p, .msg_box_second p, .msg_box_first p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .msg_box_first {
+        top: 190px;
+        padding: 18px 9px 23px 19px;
+    }
+    .msg_box_second {
+        top: 123px;
+        padding: 17px 17px 17px 10px;
+        max-width: 200px;
+        margin: 0 0 0 auto;
+    }
+    .msg_box_third {
+        top: 256px;
+        padding: 30px 14px 26px 25px;
+    }
+    .msg_box_forth {
+        top: 308px;
+        bottom: auto;
+        left: -28px;
+        padding: 13px 13px 21px 19px;
+    }
+    .msg_box_fifth {
+        top: 338px;
+        bottom: auto;
+        right: -24px;
+        padding: 26px 15px 22px 18px;
+    }
+    .have_content .troubles_faces {
+        margin: 385px auto 0;
+    }
+    .msg_box_sixth {
+        bottom: -49px;
+        padding: 32px 19px 25px;
+        max-width: 344px;
+    }
+    .have_content .troubles_faces {
+        margin: 310px auto 0;
+    }
+    .msg_box_sixth p {
+        font-size: 18px;
+    }
+    .garden_clinic_section h2 {
+        font-size: 20px;
+        padding: 0 12px;
+        line-height: 42px;
+    }
+    .have_such_troubles_section {
+        padding: 70px 0 180px;
+    }
+    .garden_clinic_section {
+        margin-top: -74px;
+    }
+    .garden_clinic_section h2 {
+        font-size: 20px;
+        padding: 0 12px;
+        line-height: 42px;
+    }
+    .garden_clinic_section h3 {
+        font-size: 24px;
+        line-height: 40px;
+        margin: 38px auto 40px;
+        padding-left: 38px;
+        padding-right: 30px;
+    }
+    .garden_clinic_section h3 span {
+        font-size: 42px;
+        line-height: 1;
+    }
+    .garden_clinic_section p {
+        font-size: 18px;
+    }
+    .garden_clinic_section p span {
+        font-size: 28px;
+    }
+    .stain_content_float {
+        top: -18px;
+    }
+    .stain_content_float p {
+        font-size: 20px;
+        color: #fff;
+        line-height: 35px;
+    }
+    .stain_content_box h5 {
+        font-size: 18px;
+    }
+    .stain_content_box p {
+        font-size: 16px;
+    }
+    .stain_content_box h5 span {
+        font-size: 16px;
+        letter-spacing: 0;
+        margin: 0;
+    }
+    .your_stain_section {
+        padding: 10px 0 60px;
+    }
+    .stain_heading {
+        min-height: 90px;
+    }
+    .type_stains_content {
+        margin-top: 50px;
+    }
+    .type_stains_content h3 {
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 24px;
+    }
+    .type_stains_content p {
+        font-size: 16px;
+    }
+    .spot_treatment_section .heading, .people_section h3 {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .people_image {
+        margin: 0 8px 8px 0;
+    }
+    .spot_image_inner:before,
+    .people_image:before {
+        top: 8px;
+        left: 8px;
+        right: -8px;
+        bottom: -8px;
+    }
+    .people_text_col {
+        min-height: 116px;
+    }
+    .people_text_col p {
+        font-size: 16px;
+    }
+    .people_text a {
+        font-size: 26px;
+        padding: 0 29px;
+        top: -75px;
+        right: 9px;
+        transform: rotate(12deg);
+    }
+    .people_text a:after, .people_text a:before {
+        width: 31px;
+        height: 22px;
+    }
+    .spot_treatment_section {
+        padding: 50px 0 30px;
+    }
+    .spot_treatment_section .heading span {
+        font-size: 30px;
+    }
+    .spot_heading .custom_col_content,
+    .spot_heading .custom_col_label {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .spot_heading_text h2 {
+        font-size: 24px;
+        line-height: 60px;
+    }
+    .spot_heading_text h2 span {
+        font-size: 22px;
+    }
+    .spot_heading_text ul li p {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 6px;
+    }
+    .spot_heading_text ul li h1 {
+        font-size: 46px;
+    }
+    .spot_heading_text ul li h1 span.text_mediam {
+        font-size: 30px;
+    }
+    .spot_heading_text ul li h1 span.text_small {
+        font-size: 16px;
+        width: 18px;
+        line-height: 1.2;
+    }
+    ul.spot_label li a {
+        min-width: 100%;
+        font-size: 16px;
+        height: 40px;
+    }
+    .spot_phototherapy p {
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .spot_content {
+        padding: 20px 15px;
+    }
+    .spot_content_image {
+        padding: 0 8px 8px 0;
+    }
+    .spot_point li > span {
+        min-width: 94px;
+        height: auto;
+        line-height: 40px;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .spot_point li > span span {
+        font-size: 24px;
+        display: block;
+        line-height: 1;
+    }
+    .spot_point li {
+        padding-left: 107px;
+        padding-top: 9px;
+    }
+    .insert_video {
+        height: 290px;
+        line-height: 290px;
+    }
+    .insert_video p {
+        font-size: 22px;
+    }
+    .doctor_comment {
+            display: table;
+    padding-bottom: 20px;
+    margin: auto;
+    padding-right: 69px;
+    }
+    .doctor_comment p {
+        font-size: 16px;
+        line-height: 14px;
+        transform: rotate(365deg);
+    }
+    .doctor_comment img {
+        left: 0 !important;
+        bottom: -16px !important;
+        max-width: 100% !important;
+        top: 0 !important;
+    }
+    .spot_point li p {
+        font-size: 16px;
+    }
+    .spot_after_images .spot_images p {
+        font-size: 20px;
+        left: 9px;
+        bottom: 2px;
+        line-height: 28px;
+    }
+    .spot_content .freckles_content {
+        padding-top: 60px;
+        margin: 0;
+    }
+    .freckles_text h2 {
+        font-size: 18px;
+    }
+    .spot_after_images .custom_col_6 {
+        margin: 40px 0 0;
+    }
+    .spot_after_images .custom_col_6:not(:last-child):before {
+        right: -11px;
+        border-top: 13px solid transparent;
+        border-left: 22px solid #c3af73;
+        border-bottom: 13px solid transparent;
+    }
+    .spot_table .spot_table_th p {
+        min-width: 87px;
+    }
+    .spot_table_th p, .spot_table_td p {
+        font-size: 16px;
+    }
+    .spot_after_images.spot_images_first {
+        padding: 0;
+    }
+    .spot_content_sec > .freckles_content {
+        padding: 30px 15px 0;
+    }
+    .spot_content_sec > .freckles_content img {
+        max-width: 89px;
+        position: absolute;
+        top: -6px;
+    }
+    .spot_after_images.spot_images_second {
+        padding: 0;
+    }
+    .spot_table_sec.spot_table_second_sec {
+        margin-top: 30px;
+    }
+    .treatment_course_sec h2 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .treatment_course_sec h2 span {
+        font-size: 36px;
+    }
+    .treatment_course_sec {
+        margin: 70px 0px 40px;
+    }
+    .treatment_course_sec h2 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .treatment_course_sec img {
+        position: absolute;
+        top: -80px;
+        right: 0;
+        max-width: 130px;
     }
 }
 /*responsive css end*/
