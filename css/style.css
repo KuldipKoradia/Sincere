@@ -358,6 +358,7 @@ header.site_header nav {
     background-size: cover;
     position: relative;
     padding: 35px 0;
+    overflow: hidden;
 }
 .banner_section .custom_container {
     width: 100%;
@@ -382,13 +383,18 @@ header.site_header nav {
     font-size: 37px;
     line-height: 54px;
     color: #4c4c4c;
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .banner_content h2 {
     font-size: 55px;
     line-height: 85px;
     color: #4c4c4c;
-    font-weight: 300;
     margin: 30px 0 25px;
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .banner_content h2 span {
     display: table;
@@ -434,7 +440,7 @@ header.site_header nav {
 .lumekka_inner h1 {
     font-size: 125px;
     color: #950308;
-    line-height: 104px;
+    line-height: 1;
     font-weight: 900;
 }
 .lumekka_inner h1 span.text_mediam {
@@ -524,11 +530,10 @@ a.lumekka_red p span {
 
 .spots_btn a {
     background-color: #e3d6c5;
-    margin: 0;
+    margin: 0 0 120px !important;
     align-items: center;
     padding: 36px;
     border-radius: 30px;
-    margin-bottom: 120px;
 }
 .spots_btn a .insta_icon {
     -ms-flex: 0 0 120px;
@@ -578,8 +583,10 @@ a.lumekka_red p span {
     text-align: center;
     font-size: 80px;
     color: #fff;
-    font-weight: 100;
     letter-spacing: 4px;
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .have_content h3 span {
     font-size: 50px;
@@ -711,16 +718,22 @@ a.lumekka_red p span {
     color: #fff;
     background-color: #c3af73;
     padding: 0 14px;
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .garden_clinic_section h3 {
-    font-size: 40px;
+    font-size: 32px;
     color: #950308;
     text-align: center;
     line-height: 70px;
     position: relative;
-    margin: 60px 0 50px;
-    padding-left: 20px;
+    margin: 60px auto 50px;
+    padding-left: 50px;
+    padding-right: 31px;
     font-weight: 500;
+    display: table;
+    overflow: hidden;
 }
 .garden_clinic_section h3 span {
     font-size: 70px;
@@ -872,7 +885,8 @@ a.lumekka_red p span {
     font-size: 25px;
     margin-top: 20px;
     color: #000;
-    font-weight: 600;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
 }
 .type_stains_content {
     margin-top: 100px;
@@ -888,6 +902,9 @@ a.lumekka_red p span {
     background: radial-gradient(circle farthest-corner at center center, #B27122 0%, #5a3b1c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .type_stains_content p {
     text-align: center;
@@ -918,11 +935,14 @@ a.lumekka_red p span {
     color: #950308;
     font-weight: 500;
     margin-bottom: 120px;
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .people_section .custom_row {
     margin: 0 -12px;
+    align-items: center;
 }
-
 .people_section .custom_col_6 {
     padding: 0 12px;
     display: flex;
@@ -963,9 +983,12 @@ a.lumekka_red p span {
     padding: 0 40px;
     display: table;
     position: absolute;
-    top: -95px;
-    right: 79px;
+    top: -105px;
+    right: 89px;
     transform: rotate(12deg);
+    font-family: vdl-pengentle,sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 .people_text a:before {
     content: '';
@@ -1011,16 +1034,17 @@ a.lumekka_red p span {
     padding: 10px 5px;
 }
 .people_text .custom_row {
-    margin: 0 -5px;
+    margin: 0 -5px !important;
 }
 .people_text .custom_col_3 {
-    padding: 0 5px;
+    padding: 0 5px !important;
 }
 .people_text_col p {
     font-size: 23px;
     color: #595959;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: -0.4px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 /*people section css end*/
 
@@ -1039,8 +1063,10 @@ a.lumekka_red p span {
     text-align: center;
     color: #950308;
     font-size: 45px;
-    font-weight: 500;
     margin-bottom: 60px;
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .spot_treatment_section .heading span {
     display: block;
@@ -1155,6 +1181,8 @@ ul.spot_label li a {
     font-size: 35px;
     color: #595959;
     line-height: 60px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
 }
 .spot_phototherapy p span {
     background-color: #950308;
@@ -1217,7 +1245,8 @@ ul.spot_label li a {
 .spot_point li p {
     font-size: 25px;
     color: #595959;
-    font-weight: 600;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
 }
 .insert_video {
     width: 100%;
@@ -1230,8 +1259,9 @@ ul.spot_label li a {
 }
 .insert_video p {
     font-size: 40px;
-    font-weight: 600;
     color: #595959;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
 }
 .freckles_content {
     display: -ms-flexbox;
@@ -1459,9 +1489,11 @@ ul.spot_label li a {
     text-align: center;
     font-size: 50px;
     color: #c3af74;
-    font-weight: 500;
     line-height: 1.3;
     margin-bottom: 110px;
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .resion_section h3 .big_text {
     font-size: 120px;
@@ -1546,13 +1578,15 @@ ul.spot_label li a {
 }
 .resion_content_sec.resion_first_sec .custom_row:last-child {
     margin: 60px -15px;
+    margin-top: 60px !important;
+    margin-bottom: 130px !important;
 }
 .resion_text p {
     font-size: 25px;
     color: #595959;
     font-weight: 500;
-    font-family: 'Noto Sans JP', sans-serif;
     line-height: 40px;
+    font-family: 'HiraKakuPro-W3';
 }
 .resion_text p span {
     display: block;
@@ -1990,13 +2024,14 @@ ul.spot_label li a {
 .director_content p {
     font-size: 25px;
     color: #595959;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'HiraKakuPro-W3';
 }
 .cynthia_sec {
     padding: 0 20px;
 }
 .cynthia_sec .custom_row {
     margin: 0 -24px;
+    align-items: center;
 }
 .cynthia_sec .custom_col_map {
     -ms-flex: 0 0 600px;
@@ -2180,3 +2215,226 @@ ul.spot_label li a {
     margin-top: 100px;
 }
 /*introduction section css end*/
+
+/*responsive css start*/
+@media(max-width: 1366px) {
+    .custom_container {
+        max-width: 1167px !important;
+        padding: 0 15px !important;
+    }
+    .treatment_steps_section .custom_container {
+        padding: 0px 36px !important;
+    }
+    .custom_row {
+        margin: 0 -15px !important;
+    }
+    .custom_col_map,
+    .custom_col_text,
+    .custom_col_image,
+    .custom_col_3,
+    .custom_col_6,
+    .custom_col_12 {
+        padding: 0 15px !important;
+    }
+    .lumekka_inner p {
+        font-size: 38px;
+    }
+    .lumekka_inner h1 span.text_mediam {
+        font-size: 60px;
+    }
+    .lumekka_inner h1 {
+        font-size: 115px;
+    }
+    .lumekka_inner h1 span.text_small {
+        font-size: 32px;
+    }
+    .msg_box_sixth p {
+        font-size: 40px;
+    }
+    .garden_clinic_section h2 {
+        font-size: 50px;
+    }
+}
+@media(max-width: 1166px) {
+    .custom_container {
+        max-width: 900px !important;
+        padding: 0 15px !important;
+    }
+    .custom_col_3 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .custom_col_6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .lumekka_inner h1 {
+        font-size: 80px;
+    }
+    .lumekka_inner h1 span.text_mediam {
+        font-size: 56px;
+    }
+    .lumekka_inner h1 span.text_small {
+        font-size: 28px;
+    }
+    .lumekka_inner p {
+        font-size: 26px;
+    }
+    a.lumekka_blue {
+        font-size: 28px;
+    }
+    a.lumekka_blue span.btns_label {
+        font-size: 26px;
+        padding: 4px 10px 3px 10px;
+    }
+    a.lumekka_blue span.btns_label span {
+        font-size: 22px;
+    }
+    a.lumekka_red span.btns_label {
+        font-size: 20px;
+    }
+    a.lumekka_red p {
+        font-size: 48px;
+    }
+    a.lumekka_red p span {
+        font-size: 16px;
+    }
+    .banner_image {
+        max-width: 525px;
+    }
+    .banner_content p {
+        font-size: 24px;
+        line-height: 39px;
+    }
+    .banner_content h2 {
+        font-size: 40px;
+        line-height: 60px;
+        margin: 10px 0;
+    }
+    .banner_content h2 span {
+        font-size: 48px;
+    }
+    .banner_content img {
+        max-width: 320px;
+        float: right;
+    }
+    .lumekka_sec {
+        padding: 35px 40px;
+        max-width: 750px;
+    }
+    .have_content h3 {
+        font-size: 56px;
+    }
+    .msg_box_first {
+        top: 170px;
+        padding: 46px 14px 50px 25px;
+    }
+    .msg_box_second {
+        top: 170px;
+        padding: 46px 25px 48px 35px;
+        max-width: 260px;
+    }
+    .msg_box_third {
+        top: 170px;
+        padding: 44px 14px 37px 25px;
+    }
+    .msg_box_forth {
+        bottom: 70px;
+        left: 0;
+    }
+    .msg_box_fifth {
+        bottom: 70px;
+        right: 0;
+        padding: 47px 25px 37px 23px;
+    }
+    .msg_box_fifth p,
+    .msg_box_forth p,
+    .msg_box_third p,
+    .msg_box_second p,
+    .msg_box_first p {
+        font-size: 22px;
+    }
+    .msg_box_sixth {
+        bottom: -78px;
+        padding: 59px 25px 52px;
+        max-width: 770px;
+    }
+    .msg_box_sixth p {
+        font-size: 32px;
+    }
+    .have_such_troubles_section {
+        padding: 70px 0 250px;
+    }
+    .garden_clinic_section h2 {
+        font-size: 42px;
+    }
+    .garden_clinic_section {
+        margin-top: -124px;
+    }
+    .garden_clinic_section h3 {
+        font-size: 32px;
+    }
+    .garden_clinic_section h3 span {
+        font-size: 54px;
+    }
+    .garden_clinic_section h3 .garden_first {
+        left: -13px;
+    }
+    .garden_clinic_section h3 .garden_second {
+        right: -20px;
+    }
+    .garden_clinic_section p {
+        font-size: 32px;
+    }
+    .garden_clinic_section p span {
+        font-size: 48px;
+    }
+    .garden_clinic_section p span:before {
+        height: 3px;
+    }
+    .stain_content_float {
+        top: -25px;
+    }
+    .stain_content_float p {
+        font-size: 32px;
+        color: #fff;
+    }
+    .your_stain_section {
+        padding: 50px 0 60px;
+    }
+    .type_stains_content {
+        margin-top: 80px;
+    }
+    .type_stains_content h3 {
+        font-size: 38px;
+        margin-bottom: 35px;
+        line-height: 55px;
+    }
+    .type_stains_content p {
+        font-size: 28px;
+    }
+    .people_section {
+        padding: 50px 0;
+    }
+    .people_section h3 {
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+    .people_content {
+        width: 100%;
+        max-width: 720px;
+        margin: auto;
+    }
+    .people_content .custom_col_3 {
+        -ms-flex: 0 0 33.33%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+    .people_text {
+        position: relative;
+        margin-top: 140px;
+    }
+}
+/*responsive css end*/
