@@ -1244,7 +1244,7 @@ a.lumekka_red p span {
 }
 .spot_content_sec .spot_heading {
     background-color: #950308;
-    padding: 12px 38px 6px;
+    padding: 0;
     position: relative;
 }
 .spot_heading .custom_row {
