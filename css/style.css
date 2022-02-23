@@ -470,8 +470,28 @@ a.lumekka_blue {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5979cb",endColorstr="#5979cb",GradientType=1);
     box-shadow: inset 0px 8px 20px  0 rgba(255, 255, 255, 0.50), 
     inset 0px -8px 20px  0px rgba(0, 0, 0, 0.50);
-    position: relative;
     transition: all 0.4s;
+    animation-name: AniBttn;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    position: relative;
+    overflow: hidden;
+}
+a.lumekka_red:before,
+a.lumekka_blue:before{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny__btn 5s ease-in-out infinite;
+}
+a.lumekka_red:before{
+    animation-delay: 2.5s;
 }
 a.lumekka_red:hover,
 a.lumekka_blue:hover {
@@ -508,6 +528,13 @@ a.lumekka_red {
     inset 0px -8px 20px  0px rgba(0, 0, 0, 0.50);
     position: relative;
     transition: all 0.4s;
+    animation-name: AniBttn;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    position: relative;
+    overflow: hidden;
+    animation-delay: 2.5s;
 }
 a.lumekka_red span.btns_label {
     font-size: 26px;
@@ -558,6 +585,126 @@ a.lumekka_red p span {
 .spots_btn a .spots_btn_content img {
     margin: 19px auto 0;
     max-width: 246px;
+}
+@keyframes AniBttn {
+    0% {
+        /*box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);*/
+        top: 0px;
+    }
+    10% {
+        /*box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);*/
+        top: 6px;
+    }
+    20% {
+        /*box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.3);*/
+        top: 0px;
+    }
+    30% {
+        /*box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);*/
+        top: 6px;
+    }
+    40% {
+        /*box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.3);*/
+        top: 0px;
+    }
+}
+@-webkit-keyframes AniBttn {
+    0% {
+        /*-webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);*/
+        top: 0px;
+    }
+    10% {
+        /*-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);*/
+        top: 6px;
+    }
+    20% {
+        /*-webkit-box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.3);*/
+        top: 0px;
+    }
+    30% {
+        /*-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);*/
+        top: 6px;
+    }
+    40% {
+        /*-webkit-box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.3);*/
+        top: 0px;
+    }
+}
+@-ms-keyframes AniBttn {
+    0% {
+        /*-ms-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);*/
+        top: 0px;
+    }
+    10% {
+        /*-ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);*/
+        top: 6px;
+    }
+    20% {
+        /*-ms-box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.3);*/
+        top: 0px;
+    }
+    30% {
+        /*-ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);*/
+        top: 6px;
+    }
+    40% {
+        /*-ms-box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.3);*/
+        top: 0px;
+    }
+}
+@keyframes shiny__btn {
+    0% { 
+        transform: scale(0) rotate(45deg); 
+        opacity: 0; 
+    }
+    80% { 
+        transform: scale(0) rotate(45deg); 
+        opacity: 0.3; 
+    }
+    81% { 
+        transform: scale(4) rotate(45deg); 
+        opacity: 1; 
+    }
+    100% { 
+        transform: scale(50) rotate(45deg); 
+        opacity: 0; 
+    }
+}
+@-webkit-keyframes shiny__btn {
+    0% { 
+        -webkit-transform: scale(0) rotate(45deg); 
+        opacity: 0; 
+    }
+    80% { 
+        -webkit-transform: scale(0) rotate(45deg); 
+        opacity: 0.3; 
+    }
+    81% { 
+        -webkit-transform: scale(4) rotate(45deg); 
+        opacity: 1; 
+    }
+    100% { 
+        -webkit-transform: scale(50) rotate(45deg); 
+        opacity: 0; 
+    }
+}
+@-ms-keyframes shiny__btn {
+    0% { 
+        -ms-transform: scale(0) rotate(45deg); 
+        opacity: 0; 
+    }
+    80% { 
+        -ms-transform: scale(0) rotate(45deg); 
+        opacity: 0.3; 
+    }
+    81% { 
+        -ms-transform: scale(4) rotate(45deg); 
+        opacity: 1; 
+    }
+    100% { 
+        -ms-transform: scale(50) rotate(45deg); 
+        opacity: 0; 
+    }
 }
 /*lumekka section css end*/
 
@@ -1184,13 +1331,13 @@ ul.spot_label li a {
     color: #595959;
     line-height: 60px;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500;
 }
 .spot_phototherapy p span {
     background-color: #950308;
     color: #fff;
     padding: 2px 15px;
     word-break: keep-all;
+    font-weight: 500;
 }
 .spot_content_image {
     width: 100%;
@@ -1256,9 +1403,21 @@ ul.spot_label li a {
     max-width: 747px;
     margin: auto;
     text-align: center;
-    height: 341px;
-    line-height: 341px;
     border: 1px solid #595959;
+    position: relative;
+    padding-top: 35.1%;
+}
+.insert_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 .insert_video p {
     font-size: 40px;
@@ -1310,6 +1469,7 @@ ul.spot_label li a {
     font-size: 38px;
     color: #950308;
     letter-spacing: -1.5px;
+    font-weight: normal;
 }
 .freckles_image img {
     max-width: 165px;
@@ -1429,6 +1589,7 @@ ul.spot_label li a {
     color: #950308;
     line-height: 70px;
     padding-left: 12px;
+    font-weight: normal;
 }
 .treatment_course_sec h2 span {
     font-size: 60px;
@@ -1924,7 +2085,7 @@ ul.spot_label li a {
     overflow: hidden;
     padding-top: 29.4%;
 }
-.shine_image_sec img {
+.shine_image_sec .shine_image {
     position: absolute;
     top: 0;
     left: 0;
@@ -1935,6 +2096,12 @@ ul.spot_label li a {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
+}
+.shine_image_sec .shine_text_image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
 }
 .shine_image_sec h5 {
     position: absolute;
