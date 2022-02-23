@@ -2692,9 +2692,6 @@ ul.spot_label li a {
         min-width: 128px;
         font-size: 22px;
     }
-    .spot_content_sec .spot_heading {
-        padding: 12px 16px 6px;
-    }
     .spot_heading .custom_col_label {
         -ms-flex: 0 0 310px;
         flex: 0 0 310px;
