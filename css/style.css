@@ -1618,6 +1618,12 @@ ul.spot_label li a {
     font-size: 50px;
     line-height: 1;
 }
+.spot_content_sec.all_faces_box .spot_heading {
+    padding: 0;
+}
+.spot_content_sec.all_faces_box .spot_heading img {
+    width: 100%;
+}
 /*spot treatment section css end*/
 
 /*resion section css start*/
@@ -2096,6 +2102,7 @@ ul.spot_label li a {
     top: 20px;
     left: 20px;
     z-index: 1;
+    width: 100%;
 }
 .shine_image_sec h5 {
     position: absolute;
@@ -2922,6 +2929,9 @@ ul.spot_label li a {
     .benefits_btns.csp {
         display: none !important;
     }
+    .shine_image_sec .shine_text_image {
+        max-width: 420px;
+    }
 }
 @media(max-width: 900px) {
     a.header_logo img {
@@ -3652,6 +3662,9 @@ ul.spot_label li a {
     }
     .people_text {
         margin-top: 100px;
+    }
+    .shine_image_sec .shine_text_image {
+        max-width: 270px;
     }
 }
 /*responsive css end*/
