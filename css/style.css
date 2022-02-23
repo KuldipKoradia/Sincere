@@ -1794,6 +1794,7 @@ ul.spot_label li a {
     margin-top: 60px !important;
     margin-bottom: 130px !important;
 }
+.resion_text ul li p .number_text,
 .resion_text p {
     font-size: 25px;
     color: #595959;
@@ -1801,9 +1802,18 @@ ul.spot_label li a {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
 }
+.resion_text ul li p {
+    padding-left: 37px;
+    position: relative;
+}
 .resion_text p span {
     display: block;
     text-align: right;
+}
+.resion_text p .number_text {
+    position: absolute;
+    top: 2px;
+    left: 0;
 }
 .resion_image {
     position: relative;
@@ -1865,37 +1875,13 @@ ul.spot_label li a {
 .resion_second_sec .resion_heading_inner {
     padding-left: 0;
     padding-right: 120px;
-    text-align: revert;
+    text-align: right;
     justify-content: flex-end;
 }
 .resion_forth_sec p.resion_text,
 .resion_second_sec p.resion_text {
     left: auto !important;
     right: -55px;
-}
-.resion_text ul li {
-    padding-left: 37px;
-    line-height: 40px;
-    counter-increment: points;
-    position: relative;
-}
-.resion_text ul li:before {
-    content: counter(points);
-    width: 25px;
-    height: 25px;
-    font-family: 'HiraKakuPro-W3';
-    line-height: 34px;
-    font-size: 25px;
-    color: #595959;
-    font-weight: 300;
-    border: 1px solid #595959;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    top: 8px;
-    left: 0;
-    margin: auto;
-    text-align: center;
 }
 .resion_third_sec {
     margin: 130px 0;
@@ -1989,10 +1975,10 @@ ul.spot_label li a {
 }
 .step_listing .step_description p {
     font-size: 25px;
-    font-family: 'HiraKakuPro-W3';
     color: #595959;
     line-height: 50px;
     font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 /*treatment steps section css end*/
 
@@ -2061,7 +2047,7 @@ ul.spot_label li a {
 }
 .single_faq .single_faq_answer li,
 .single_faq .single_faq_answer p {
-    font-family: 'HiraKakuPro-W3';
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 25px;
     color: #595959;
     font-weight: 300;
@@ -2073,11 +2059,17 @@ ul.spot_label li a {
     counter-increment: points;
     position: relative;
 }
-.single_faq .single_faq_answer li:before {
+.single_faq .single_faq_answer li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+/*.single_faq .single_faq_answer li:before {
     content: counter(points);
     width: 25px;
     height: 25px;
-    font-family: 'HiraKakuPro-W3';
+    font-family: 'Noto Sans JP', sans-serif;
     line-height: 34px;
     font-size: 25px;
     color: #595959;
@@ -2090,7 +2082,7 @@ ul.spot_label li a {
     left: 0;
     margin: auto;
     text-align: center;
-}
+}*/
 .single_faq .single_faq_answer a.pdf_button {
     float: right;
     margin-top: -35px;
@@ -2220,7 +2212,7 @@ ul.spot_label li a {
     text-align: center;
     color: #595959;
     font-family: 'Yu Mincho';
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.5;
 }
 .director_box_sec .heading h6 {
@@ -2240,13 +2232,13 @@ ul.spot_label li a {
     padding: 10px 0;
     margin: 0 0 15px;
     font-size: 25px;
-    font-family: 'HiraKakuPro-W3';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
 }
 .director_content p {
     font-size: 25px;
     color: #595959;
-    font-family: 'HiraKakuPro-W3';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
 }
 .cynthia_sec {
@@ -2295,8 +2287,7 @@ ul.spot_label li a {
 .cynthia_text p {
     font-size: 25px;
     color: #595959;
-    font-weight: 500;
-    font-family: 'HiraKakuPro-W3';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
 }
 .cynthia_table_sec {
@@ -2348,7 +2339,7 @@ ul.spot_label li a {
 .benefits_btns_sec .heading h2 {
     font-family: a-otf-ryumin-pr6n,serif;
     font-weight: 300;
-    font-style: normal;
+    font-style: italic;
     text-align: center;
     font-size: 50px;
     line-height: 80px;
@@ -3040,7 +3031,7 @@ ul.spot_label li a {
         font-size: 34px;
     }
     .have_content h3 span {
-        font-size: 28px;
+        font-size: 20px;
     }
     .msg_box_fifth p, .msg_box_forth p, .msg_box_third p, .msg_box_second p, .msg_box_first p {
         font-size: 16px;
@@ -3092,7 +3083,7 @@ ul.spot_label li a {
         line-height: 42px;
     }
     .have_such_troubles_section {
-        padding: 70px 0 180px;
+        padding: 40px 0 180px;
     }
     .garden_clinic_section {
         margin-top: -74px;
@@ -3246,21 +3237,20 @@ ul.spot_label li a {
         padding: 0 8px 8px 0;
     }
     .spot_point li > span {
-        min-width: 94px;
+        min-width: 80px;
         height: auto;
-        line-height: 40px;
+        line-height: 25px;
         font-size: 18px;
         padding: 10px;
     }
     .spot_point li > span span {
-        font-size: 24px;
+        font-size: 34px;
         display: block;
         line-height: 1;
     }
     .spot_point li {
-        padding-left: 107px;
+        padding-left: 97px;
         padding-top: 9px;
-        margin-bottom: 30px;
     }
     .doctor_comment {
         display: table;
@@ -3429,47 +3419,52 @@ ul.spot_label li a {
         font-size: 26px;
     }
     .resion_content_sec h4 span {
-        font-size: 28px;
-        width: 60px;
-        top: -17px;
-        border-bottom: none;
+        font-size: 23px;
+        width: 42px;
+        top: -14px;
+        padding-left: 2px;
     }
     .resion_content_sec h4 {
         font-size: 19px;
-        padding-left: 75px;
+        padding-left: 51px;
     }
     .resion_forth_sec h4, 
     .resion_second_sec h4, 
     .resion_forth_sec .resion_heading_inner, 
     .resion_second_sec .resion_heading_inner {
-        padding-right: 75px;
+        padding-right: 51px;
     }
     .resion_heading p.resion_text {
         font-size: 26px;
-        left: -15px;
+        left: -27px;
         bottom: -5px;
     }
     .resion_forth_sec p.resion_text, .resion_second_sec p.resion_text {
-        right: -29px;
+        right: -35px;
     }
     .resion_heading p.heading_content {
         font-size: 16px;
+        letter-spacing: -0.6px;
     }
-    .resion_forth_sec .resion_heading:before,
-    .resion_second_sec .resion_heading:before,
-    .resion_fifth_sec .resion_heading:before,
-    .resion_third_sec .resion_heading:before,
+    .resion_forth_sec .resion_heading:before, 
+    .resion_second_sec .resion_heading:before, 
+    .resion_fifth_sec .resion_heading:before, 
+    .resion_third_sec .resion_heading:before, 
     .resion_first_sec .resion_heading:before {
         top: 43px;
-        height: 100px;
+        height: 80px;
     }
+    .resion_forth_sec .resion_heading_inner, .resion_second_sec .resion_heading_inner {
+        text-align: left;
+    }
+    .resion_text ul li p .number_text,
     .resion_text p {
         font-size: 16px;
         line-height: 30px;
     }
     .resion_heading_inner {
-        padding-left: 75px;
-        margin: 10px 0 50px;
+        padding-left: 51px;
+        margin: 0 0 50px;
     }
     .resion_content_sec .custom_col_text {
         margin-top: 30px;
@@ -3483,15 +3478,11 @@ ul.spot_label li a {
         right: -8px;
         bottom: -8px;
     }
-    .resion_text ul li {
-        padding-left: 30px;
+    .resion_text ul li p {
+        padding-left: 24px;
     }
-    .resion_text ul li:before {
-        width: 20px;
-        height: 20px;
-        line-height: 27px;
-        font-size: 20px;
-        top: 1px;
+    .resion_text p .number_text {
+        top: 0px;
     }
     .resion_forth_sec h4 span, .resion_second_sec h4 span {
         padding: 0;
@@ -3569,7 +3560,7 @@ ul.spot_label li a {
         line-height: 30px;
     }
     .single_faq .single_faq_answer li {
-        padding-left: 30px;
+        padding-left: 25px;
         line-height: 36px;
     }
     .single_faq .single_faq_answer li:before {
@@ -3701,8 +3692,10 @@ ul.spot_label li a {
         padding: 0 15px 15px;
     }
     a.lumekka_red, a.lumekka_blue {
-        height: 65px;
-        padding: 0 26px;
+        height: 56px;
+        padding: 0 15px;
+        box-shadow: inset 0px 5px 8px  0 rgba(255, 255, 255, 0.50), 
+        inset 0px -5px 8px  0px rgba(0, 0, 0, 0.50);
     }
     a.lumekka_blue {
         margin: 20px 0;
@@ -3742,5 +3735,14 @@ ul.spot_label li a {
         max-width: 90%;
         padding: 0 !important;
     }
+    .spot_image_sec p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+    a.lumekka_red img {
+        max-height: 38px;
+    }
+
 }
 /*responsive css end*/
