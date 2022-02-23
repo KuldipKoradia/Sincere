@@ -1080,6 +1080,7 @@ a.lumekka_red p span {
 .spot_content_sec .spot_heading {
     background-color: #950308;
     padding: 12px 38px 6px;
+    position: relative;
 }
 .spot_heading .custom_row {
     margin: 0 -19px;
@@ -1189,6 +1190,7 @@ ul.spot_label li a {
     background-color: #950308;
     color: #fff;
     padding: 2px 15px;
+    word-break: keep-all;
 }
 .spot_content_image {
     width: 100%;
@@ -1459,6 +1461,7 @@ ul.spot_label li a {
     background-color: transparent;
     padding: 0;
     font-size: 50px;
+    line-height: 1;
 }
 /*spot treatment section css end*/
 
@@ -1951,7 +1954,7 @@ ul.spot_label li a {
 }
 .director_box_sec .custom_col_image {
     -ms-flex: 0 0 528px;
-    flex: 0 0 528px;
+    flex: 0 0 100%;
     max-width: 528px;
     padding: 0 25px;
 }
@@ -2038,7 +2041,7 @@ ul.spot_label li a {
 }
 .cynthia_sec .custom_col_map {
     -ms-flex: 0 0 600px;
-    flex: 0 0 600px;
+    flex: 0 0 100%;
     max-width: 600px;
     padding: 0 24px;
 }
@@ -2132,7 +2135,7 @@ ul.spot_label li a {
 }
 .benefits_btns_sec .benefits_btns {
     display: -ms-flexbox;
-    display: flex;
+    display: flex !important;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: center;
@@ -2206,6 +2209,25 @@ ul.spot_label li a {
     font-size: 40px;
     color: #950308;
     font-weight: 600;
+    position: relative;
+    padding: 0 40px;
+}
+.introduction_section .lumekka_sec .lumekka_inner h3:before {
+    content: '＼';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #950308;
+    font-size: 40px;
+}
+.introduction_section .lumekka_sec .lumekka_inner h3:after {
+    content: '＼';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #950308;
+    font-size: 40px;
+    transform: rotateY(180deg);
 }
 .introduction_section .lumekka_sec .lumekka_btns {
     padding: 0 60px 40px;
@@ -2216,6 +2238,9 @@ ul.spot_label li a {
     font-family: 'Noto Sans JP', sans-serif;
     color: #000;
     margin-top: 100px;
+}
+.benefits_btns.csp {
+    display: none !important;
 }
 /*introduction section css end*/
 
@@ -2612,7 +2637,7 @@ ul.spot_label li a {
     }
     .resion_content_sec .custom_col_image {
         -ms-flex: 0 0 730px;
-        flex: 0 0 730px;
+        flex: 0 0 100%;
         max-width: 730px;
         padding: 0 15px;
     }
@@ -2637,97 +2662,105 @@ ul.spot_label li a {
         padding-right: calc((100% - 900px) / 2);
     }
     .resion_forth_sec p.resion_text, .resion_second_sec p.resion_text {
-     right: -42px;
- }
- .introduction_section,
- .treatment_steps_section {
-    padding: 80px 0px;
-}
-.step_listing .step_description {
-    padding: 30px 0 0 90px;
-}
-.introduction_section > h3,
-.faq_section h3,
-.treatment_steps_section h3 {
-    font-size: 40px;
-    margin-bottom: 70px;
-}
-.step_listing h4 span {
-    left: -40px;
-}
-.step_listing li:before {
-    left: 25px;
-    height: 76px;
-    font-size: 48px;
-}
-.step_listing h4 {
-    padding-bottom: 18px;
-}
-.single_faq .single_faq_answer {
-    padding: 45px 35px 35px 102px;
-}
-.single_faq .single_faq_answer:before {
-    left: 60px;
-}
-.shine_image_sec h5 {
-    font-size: 28px;
-}
-.cynthia_sec .custom_col_map,
-.director_box_sec .custom_col_image {
-    margin: auto;
-}
-.cynthia_sec .custom_col_text,
-.director_box_sec .custom_col_text {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 50px;
-}
-.director_box_sec .heading p {
-    font-size: 20px;
-}
-.director_box_sec .heading h4 {
-    font-size: 38px;
-}
-.director_box_sec .heading h6 {
-    font-size: 20px;
-}
-.cynthia_text p,
-.director_content p {
-    font-size: 22px;
-}
-.benefits_btns_sec .heading {
-    padding: 8px 30px;
-}
-.benefits_btns_sec .heading h2 {
-    font-size: 38px;
-    line-height: 70px;
-}
-.benefits_btns_sec .benefits_btns {
-    padding: 20px 25px 26px;
-}
-.benefits_btns_sec .benefits_btns a.line_text {
-    font-size: 28px;
-}
-.benefits_btns_sec .benefits_btns a.line_btn {
-    min-width: 240px;
-    height: 70px;
-    padding: 10px;
-    font-size: 24px;
-}
-.introduction_section .lumekka_sec .heading h2 {
-    font-size: 38px;
-}
-.introduction_section .lumekka_sec .lumekka_inner h3 {
-    font-size: 28px;
-}
-.introduction_section .lumekka_sec .lumekka_btns {
-    padding: 0 40px 40px;
-}
-.coptright_sec p {
-    font-size: 20px;
-    margin-top: 60px;
-}
+        right: -42px;
+    }
+    .introduction_section,
+    .treatment_steps_section {
+        padding: 80px 0px;
+    }
+    .step_listing .step_description {
+        padding: 30px 0 0 90px;
+    }
+    .introduction_section > h3,
+    .faq_section h3,
+    .treatment_steps_section h3 {
+        font-size: 40px;
+        margin-bottom: 70px;
+    }
+    .step_listing h4 span {
+        left: -40px;
+    }
+    .step_listing li:before {
+        left: 25px;
+        height: 76px;
+        font-size: 48px;
+    }
+    .step_listing h4 {
+        padding-bottom: 18px;
+    }
+    .single_faq .single_faq_answer {
+        padding: 45px 35px 35px 102px;
+    }
+    .single_faq .single_faq_answer:before {
+        left: 60px;
+    }
+    .shine_image_sec h5 {
+        font-size: 28px;
+    }
+    .cynthia_sec .custom_col_map,
+    .director_box_sec .custom_col_image {
+        margin: auto;
+    }
+    .cynthia_sec .custom_col_text,
+    .director_box_sec .custom_col_text {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    .director_box_sec .heading p {
+        font-size: 20px;
+    }
+    .director_box_sec .heading h4 {
+        font-size: 38px;
+    }
+    .director_box_sec .heading h6 {
+        font-size: 20px;
+    }
+    .cynthia_text p,
+    .director_content p {
+        font-size: 22px;
+    }
+    .benefits_btns_sec .heading {
+        padding: 8px 30px;
+    }
+    .benefits_btns_sec .heading h2 {
+        font-size: 38px;
+        line-height: 70px;
+    }
+    .benefits_btns_sec .benefits_btns {
+        padding: 20px 25px 26px;
+    }
+    .benefits_btns_sec .benefits_btns a.line_text {
+        font-size: 28px;
+    }
+    .benefits_btns_sec .benefits_btns a.line_btn {
+        min-width: 240px;
+        height: 70px;
+        padding: 10px;
+        font-size: 24px;
+    }
+    .introduction_section .lumekka_sec .heading h2 {
+        font-size: 38px;
+    }
+    .introduction_section .lumekka_sec .lumekka_inner h3:before,
+    .introduction_section .lumekka_sec .lumekka_inner h3:after,
+    .introduction_section .lumekka_sec .lumekka_inner h3 {
+        font-size: 28px;
+    }
+    .introduction_section .lumekka_sec .lumekka_btns {
+        padding: 0 40px 40px;
+    }
+    .coptright_sec p {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    .laser_once_box .spot_heading_text h2 a {
+        display: none;
+    }
+    .benefits_btns.csp {
+        display: none !important;
+    }
 }
 @media(max-width: 900px) {
     a.header_logo img {
@@ -2839,6 +2872,7 @@ ul.spot_label li a {
     }
     .garden_clinic_section {
         margin-top: -74px;
+        padding-bottom: 65px;
     }
     .garden_clinic_section h2 {
         font-size: 20px;
@@ -2964,8 +2998,16 @@ ul.spot_label li a {
         width: 18px;
         line-height: 1.2;
     }
+    ul.spot_label li {
+        padding: 8px 8px;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
     ul.spot_label li a {
-        min-width: 100%;
+        min-width: 90px;
         font-size: 16px;
         height: 40px;
     }
@@ -3003,10 +3045,10 @@ ul.spot_label li a {
         font-size: 22px;
     }
     .doctor_comment {
-            display: table;
-    padding-bottom: 20px;
-    margin: auto;
-    padding-right: 69px;
+        display: table;
+        padding-bottom: 20px;
+        margin: auto;
+        padding-right: 69px;
     }
     .doctor_comment p {
         font-size: 16px;
@@ -3075,7 +3117,7 @@ ul.spot_label li a {
         font-size: 36px;
     }
     .treatment_course_sec {
-        margin: 70px 0px 40px;
+        margin: 50px 0px 40px;
     }
     .treatment_course_sec h2 {
         font-size: 20px;
@@ -3083,9 +3125,379 @@ ul.spot_label li a {
     }
     .treatment_course_sec img {
         position: absolute;
-        top: -80px;
+        top: -60px;
         right: 0;
-        max-width: 130px;
+        max-width: 100px;
+    }
+    .laser_once_box .spot_heading_text ul li p {
+        font-size: 28px;
+    }
+    .laser_once_box ul.spot_label li{
+        padding: 0;
+    }
+    .laser_once_box .spot_heading_text h2 {
+        padding-left: 100px;
+        position: relative;
+    }
+    .spot_content_sec {
+        margin-bottom: 60px;
+    }
+    .spot_content_sec.all_faces_box .spot_heading_text h2 {
+        letter-spacing: 0;
+    }
+    .spots_btn a {
+        padding: 15px;
+        position: relative;
+        border-radius: 16px;
+        margin-bottom: 50px !important;
+    }
+    .spots_btn a .insta_icon {
+        -ms-flex: 0 0 62px;
+        flex: 0 0 62px;
+        max-width: 62px;
+    }
+    .spots_btn a .spots_btn_content {
+        -ms-flex: 0 0 calc(100% - 62px);
+        flex: 0 0 calc(100% - 62px);
+        max-width: calc(100% - 62px);
+    }
+    .spots_btn a .spots_btn_content p {
+        font-size: 16px;
+        text-align: left;
+        line-height: 34px;
+    }
+    .spots_btn a .spots_btn_content img {
+        margin: 0;
+        max-width: 145px;
+        position: absolute;
+        right: 18px;
+        bottom: 19px;
+    }
+    .laser_once_box .spot_heading_text h2 a {
+        text-align: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        color: #fff !important;
+        border: 1px solid;
+        border-radius: 10px;
+        font-weight: 600;
+        padding: 0 2px;
+        background: none;
+        min-width: 90px;
+        font-size: 16px;
+        height: 40px;
+        line-height: 38px;
+        -webkit-text-fill-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .resion_section h3 {
+        font-size: 22px;
+        margin-bottom: 70px;
+    }
+    .resion_section h3 .big_text {
+        font-size: 36px;
+    }
+    .resion_section h3 .small_text {
+        font-size: 26px;
+    }
+    .resion_content_sec h4 span {
+        font-size: 28px;
+        width: 60px;
+        top: -17px;
+        border-bottom: none;
+    }
+    .resion_content_sec h4 {
+        font-size: 19px;
+        padding-left: 75px;
+    }
+    .resion_forth_sec h4, 
+    .resion_second_sec h4, 
+    .resion_forth_sec .resion_heading_inner, 
+    .resion_second_sec .resion_heading_inner {
+        padding-right: 75px;
+    }
+    .resion_heading p.resion_text {
+        font-size: 26px;
+        left: -19px;
+        bottom: -2px;
+    }
+    .resion_forth_sec p.resion_text, .resion_second_sec p.resion_text {
+        right: -25px;
+    }
+    .resion_heading p.heading_content {
+        font-size: 16px;
+    }
+    .resion_forth_sec .resion_heading:before,
+    .resion_second_sec .resion_heading:before,
+    .resion_fifth_sec .resion_heading:before,
+    .resion_third_sec .resion_heading:before,
+    .resion_first_sec .resion_heading:before {
+        top: 43px;
+        height: 100px;
+    }
+    .resion_text p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .resion_heading_inner {
+        padding-left: 75px;
+        margin: 10px 0 50px;
+    }
+    .resion_content_sec .custom_col_text {
+        margin-top: 30px;
+    }
+    .resion_image {
+        margin: 0 8px 8px 0;
+    }
+    .resion_image:before {
+        top: 8px;
+        left: 8px;
+        right: -8px;
+        bottom: -8px;
+    }
+    .resion_text ul li {
+        padding-left: 30px;
+    }
+    .resion_text ul li:before {
+        width: 20px;
+        height: 20px;
+        line-height: 27px;
+        font-size: 20px;
+        top: 1px;
+    }
+    .resion_forth_sec h4 span, .resion_second_sec h4 span {
+        padding: 0;
+    }
+    .resion_content_sec.resion_first_sec .custom_row:last-child {
+        margin-bottom: 80px !important;
+    }
+    .resion_third_sec {
+        margin: 80px 0;
+    }
+    .resion_fifth_sec {
+        margin-top: 80px;
+    }
+    .resion_section {
+        padding: 50px 0 80px;
+    }
+    .introduction_section, .treatment_steps_section {
+        padding: 50px 0px;
+    }
+    .introduction_section > h3, .faq_section h3, .treatment_steps_section h3 {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .step_listing li:before {
+        left: 25px;
+        height: 50px;
+        font-size: 30px;
+        width: 50px;
+        line-height: 50px;
+    }
+    .step_listing h4 {
+        padding-bottom: 18px;
+        line-height: 50px;
+        font-size: 26px;
+        padding-left: 70px;
+    }
+    .step_listing h4 span {
+        top: 2px;
+    }
+    .step_listing .step_description p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .step_listing .step_description {
+        padding: 30px 0 0 60px;
+    }
+    .step_listing li:not(:last-child) {
+        padding-bottom: 45px;
+    }
+    .step_listing li:not(:last-child):after {
+        left: 47px;
+    }
+    .single_faq {
+        border-radius: 26px;
+    }
+    .single_faq .single_faq_question {
+        padding: 15px;
+    }
+    .single_faq .single_faq_question h4 {
+        font-size: 20px;
+        padding-left: 30px;
+    }
+    .single_faq .single_faq_answer {
+        padding: 20px 15px 15px 54px;
+    }
+    .single_faq .single_faq_answer:before {
+        left: 22px;
+        top: 9px;
+        font-size: 20px;
+    }
+    .single_faq .single_faq_answer li, .single_faq .single_faq_answer p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .single_faq .single_faq_answer li {
+        padding-left: 30px;
+        line-height: 36px;
+    }
+    .single_faq .single_faq_answer li:before {
+        width: 20px;
+        height: 20px;
+        line-height: 25px;
+        font-size: 20px;
+        top: 4px;
+    }
+    .single_faq .single_faq_answer a.pdf_button {
+        margin-top: 0;
+    }
+    .faq_section {
+        padding: 50px 0px 90px;
+    }
+    .shine_image_sec h5 {
+        font-size: 20px;
+    }
+    .shine_image_sec {
+        padding-top: 70%;
+    }
+    .director_image {
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+    .cynthia_map:before,
+    .director_image:before {
+        top: 8px;
+        left: 8px;
+        right: -8px;
+        bottom: -8px;
+    }
+    .director_box_sec {
+        margin: 80px 0px;
+    }
+    .director_box_sec .heading p {
+        font-size: 16px;
+    }
+    .director_box_sec .heading h4 {
+        font-size: 32px;
+    }
+    .director_box_sec .heading h6 {
+        font-size: 16px;
+    }
+    .director_content h3 {
+        font-size: 22px;
+    }
+    .cynthia_text p, .director_content p {
+        font-size: 16px;
+    }
+    .cynthia_sec {
+        padding: 0;
+    }
+    .cynthia_map {
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+    .cynthia_text h3 {
+        font-size: 24px;
+    }
+    .cynthia_table {
+        margin: 20px auto 0;
+    }
+    .benefits_btns_sec {
+        border-radius: 18px;
+        margin: 60px auto;
+    }
+    .benefits_btns_sec .heading h2 {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .benefits_btns_sec .heading h2 {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .benefits_btns_sec .benefits_btns:before {
+        border-radius: 0px 0px 18px 18px;
+    }
+    .benefits_btns_sec .heading {
+        padding: 8px 15px;
+    }
+    .benefits_btns_sec .benefits_btns {
+        padding: 10px 15px 16px;
+    }
+    .benefits_btns.cpc {
+        display: none !important;
+    }
+    .benefits_btns.csp {
+        display: flex !important;
+        justify-content: space-around;
+    }
+    .benefits_btns_sec .benefits_btns a.btn_logo img {
+        max-width: 148px;
+        margin-bottom: 8px;
+    }
+    .benefits_btns_sec .benefits_btns a.line_btn {
+        min-width: 155px;
+        height: 50px;
+        padding: 6px;
+        font-size: 16px;
+    }
+    .benefits_btns_sec .benefits_btns a.line_btn img {
+        margin-right: 10px;
+        max-width: 30px;
+    }
+    .benefits_btns_sec .benefits_btns a.line_text {
+        font-size: 16px;
+    }
+    .introduction_section .lumekka_sec .heading h2 {
+        font-size: 20px;
+        line-height: 45px;
+    }
+    .introduction_section .lumekka_sec .lumekka_inner h3 {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .introduction_section .lumekka_sec .lumekka_inner h3:before,
+    .introduction_section .lumekka_sec .lumekka_inner h3:after {
+        font-size: 20px;
+    }
+    .introduction_section .lumekka_sec .lumekka_inner h3:before {
+        left: 40px;
+    }
+    .introduction_section .lumekka_sec .lumekka_inner h3:after {
+        right: 40px;
+    }
+    .introduction_section .lumekka_sec .lumekka_btns {
+        padding: 0 15px 15px;
+    }
+    a.lumekka_red, a.lumekka_blue {
+        height: 65px;
+        padding: 0 26px;
+    }
+    a.lumekka_blue {
+        margin: 20px 0;
+    }
+    .lumekka_btns a img {
+        max-width: 420px;
+        margin: auto;
+        width: 100%;
+    }
+    .coptright_sec p {
+        font-size: 16px;
+    }
+    .your_stain_section:before {
+        height: 600px;
+    }
+    .people_text {
+        margin-top: 100px;
     }
 }
 /*responsive css end*/
