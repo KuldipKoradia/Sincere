@@ -1654,7 +1654,7 @@ ul.spot_label li a {
 .spot_content_sec.all_faces_box .spot_heading {
     padding: 0;
 }
-.spot_content_sec.all_faces_box .spot_heading img {
+.spot_content_sec .spot_heading img {
     width: 100%;
 }
 /*spot treatment section css end*/
