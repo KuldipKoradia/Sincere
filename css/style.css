@@ -472,7 +472,7 @@ a.lumekka_blue {
     inset 0px -8px 20px  0px rgba(0, 0, 0, 0.50);
     transition: all 0.4s;
     animation-name: AniBttn;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     position: relative;
@@ -488,10 +488,10 @@ a.lumekka_blue:before{
     width: 30px;
     height: 100%;
     background-color: #fff;
-    animation: shiny__btn 5s ease-in-out infinite;
+    animation: shiny__btn 4s ease-in-out infinite;
 }
 a.lumekka_red:before{
-    animation-delay: 2.5s;
+    animation-delay: 2s;
 }
 a.lumekka_red:hover,
 a.lumekka_blue:hover {
@@ -529,12 +529,12 @@ a.lumekka_red {
     position: relative;
     transition: all 0.4s;
     animation-name: AniBttn;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     position: relative;
     overflow: hidden;
-    animation-delay: 2.5s;
+    animation-delay: 2s;
 }
 a.lumekka_red span.btns_label {
     font-size: 26px;
@@ -1396,7 +1396,6 @@ ul.spot_label li a {
     font-size: 25px;
     color: #595959;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500;
 }
 .insert_video {
     width: 100%;
