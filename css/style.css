@@ -992,6 +992,8 @@ a.lumekka_red p span {
 .stain_content_float p {
     font-size: 40px;
     color: #fff;
+    font-family: 'Yu Mincho';
+    font-weight: 400;
 }
 .stain_content .custom_row {
     margin: 0 -25px;
@@ -1573,8 +1575,8 @@ ul.spot_label li a {
 .spot_table_th p, .spot_table_td p {
     font-size: 25px;
     color: #000000;
-    font-family: 'HiraKakuPro-W3';
-    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
 }
 .spot_table .spot_table_th p {
     min-width: 140px;
@@ -1629,6 +1631,14 @@ ul.spot_label li a {
 }
 .spot_image_sec img {
     margin: auto;
+}
+.spot_image_sec p {
+    text-align: center;
+    font-size: 23px;
+    color: #595959;
+    line-height: 60px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
 }
 .laser_once_box ul.spot_label li {
     -ms-flex: 0 0 100%;
@@ -1787,9 +1797,9 @@ ul.spot_label li a {
 .resion_text p {
     font-size: 25px;
     color: #595959;
-    font-weight: 300;
     line-height: 40px;
-    font-family: 'HiraKakuPro-W3';
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
 }
 .resion_text p span {
     display: block;
