@@ -1730,7 +1730,7 @@ ul.spot_label li a {
     font-weight: 500;
     position: absolute;
     top: 0;
-    left: -28px;
+    left: -33px;
     bottom: -5px;
     margin: auto;
     letter-spacing: 5px;
@@ -3208,6 +3208,7 @@ ul.spot_label li a {
     .spot_point li {
         padding-left: 107px;
         padding-top: 9px;
+        margin-bottom: 30px;
     }
     .doctor_comment {
         display: table;
@@ -3228,6 +3229,7 @@ ul.spot_label li a {
     }
     .spot_point li p {
         font-size: 16px;
+        min-height: 74px;
     }
     .spot_after_images .spot_images p {
         font-size: 20px;
@@ -3284,9 +3286,9 @@ ul.spot_label li a {
     .treatment_course_sec {
         margin: 50px 0px 40px;
     }
-    .treatment_course_sec h2 {
-        font-size: 20px;
-        line-height: 40px;
+    .treatment_course_sec {
+        margin: 50px auto 40px;
+        max-width: 335px;
     }
     .treatment_course_sec img {
         position: absolute;
@@ -3303,6 +3305,7 @@ ul.spot_label li a {
     .laser_once_box .spot_heading_text h2 {
         padding-left: 100px;
         position: relative;
+        text-align: right;
     }
     .spot_content_sec {
         margin-bottom: 60px;
@@ -3391,11 +3394,11 @@ ul.spot_label li a {
     }
     .resion_heading p.resion_text {
         font-size: 26px;
-        left: -19px;
-        bottom: -2px;
+        left: -15px;
+        bottom: -5px;
     }
     .resion_forth_sec p.resion_text, .resion_second_sec p.resion_text {
-        right: -25px;
+        right: -29px;
     }
     .resion_heading p.heading_content {
         font-size: 16px;
@@ -3461,7 +3464,7 @@ ul.spot_label li a {
         margin-bottom: 50px;
     }
     .step_listing li:before {
-        left: 25px;
+        left: 15px;
         height: 50px;
         font-size: 30px;
         width: 50px;
@@ -3471,23 +3474,25 @@ ul.spot_label li a {
         padding-bottom: 18px;
         line-height: 50px;
         font-size: 26px;
-        padding-left: 70px;
+        padding-left: 60px;
     }
     .step_listing h4 span {
-        top: 2px;
+        top: 12px;
+        line-height: 26px;
+        left: -34px;
     }
     .step_listing .step_description p {
         font-size: 16px;
         line-height: 30px;
     }
     .step_listing .step_description {
-        padding: 30px 0 0 60px;
+        padding: 20px 0 0 50px;
     }
     .step_listing li:not(:last-child) {
         padding-bottom: 45px;
     }
     .step_listing li:not(:last-child):after {
-        left: 47px;
+        left: 38px;
     }
     .single_faq {
         border-radius: 26px;
@@ -3666,6 +3671,24 @@ ul.spot_label li a {
     }
     .shine_image_sec .shine_text_image {
         max-width: 270px;
+    }
+    .have_content {
+        max-width: 425px;
+        margin: auto;
+    }
+    .lumekka_section .custom_container {
+        max-width: 427px !important;
+    }
+    .freckles_content {
+        flex-direction: column;
+        max-width: 376px;
+        margin: auto !important;
+    }
+    .resion_content_sec .custom_col_image {
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90%;
+        padding: 0 !important;
     }
 }
 /*responsive css end*/
