@@ -2103,6 +2103,7 @@ ul.spot_label li a {
     left: 20px;
     z-index: 1;
     width: 100%;
+    max-width: 524px;
 }
 .shine_image_sec h5 {
     position: absolute;
