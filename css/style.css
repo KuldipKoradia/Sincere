@@ -417,7 +417,7 @@ header.site_header nav {
 .lumekka_sec {
     border: 10px solid #e1d7b9;
     padding: 45px 60px 36px;
-    max-width: 974px;
+    max-width: 930px;
     margin: auto;
 }
 .lumekka_inner {
@@ -456,7 +456,7 @@ a.lumekka_blue {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 40px;
     height: 108px;
     color: #fff;
@@ -514,7 +514,7 @@ a.lumekka_red {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 108px;
     color: #fff;
     padding: 0 60px 0 40px;
@@ -1401,12 +1401,13 @@ ul.spot_label li a {
     width: 100%;
     max-width: 747px;
     margin: auto;
-    text-align: center;
-    border: 1px solid #595959;
-    position: relative;
-    padding-top: 35.1%;
 }
-.insert_video iframe {
+.video_container {
+    position: relative;
+    width: 100%;
+    padding-top: calc(100% * (8.7 / 16));
+}
+.video_container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -1417,12 +1418,6 @@ ul.spot_label li a {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
-}
-.insert_video p {
-    font-size: 40px;
-    color: #595959;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 300;
 }
 .freckles_content {
     display: -ms-flexbox;
@@ -3202,13 +3197,6 @@ ul.spot_label li a {
     .spot_point li {
         padding-left: 107px;
         padding-top: 9px;
-    }
-    .insert_video {
-        height: 290px;
-        line-height: 290px;
-    }
-    .insert_video p {
-        font-size: 22px;
     }
     .doctor_comment {
         display: table;
