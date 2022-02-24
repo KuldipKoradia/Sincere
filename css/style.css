@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
 /*fonts css start*/
-
 @font-face {
     font-family: 'Snell Roundhand';
     src: url('../fonts/SnellRoundhand-BoldScript.eot');
@@ -323,7 +322,7 @@ header.site_header nav {
 
 /*.banner section css start*/
 .banner_section {
-    background-image: url(../images/banner_bg_image.png);
+    background-image: url(../images/banner_bg_image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -439,7 +438,7 @@ a.lumekka_blue {
     background: -webkit-linear-gradient(90deg, rgba(89,121,203,1) 0%, rgba(79,107,178,1) 30%, rgba(89,121,203,1) 100%);
     background: linear-gradient(90deg, rgba(89,121,203,1) 0%, rgba(79,107,178,1) 30%, rgba(89,121,203,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5979cb",endColorstr="#5979cb",GradientType=1);
-    box-shadow: inset 0px 4px 15px  0 rgba(255, 255, 255, 0.50), inset 0px -12px 25px  0px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 4px 4px 8px  0 rgba(255, 255, 255, 0.8), inset -4px -4px 8px  0px rgba(0, 0, 0, 0.50);
     transition: all 0.4s;
     animation-name: AniBttn;
     animation-duration: 4s;
@@ -465,7 +464,8 @@ a.lumekka_red:before{
 }
 a.lumekka_red:hover,
 a.lumekka_blue:hover {
-    box-shadow: inset 0px 4px 15px  0 rgba(0, 0, 0, 0.50),inset 0px -12px 25px  0px rgba(255, 255, 255, 0.50);
+    box-shadow: inset 8px 8px 25px  0 rgba(0, 0, 0, 0.50);
+    /* ,inset -4px -4px 8px  0px rgba(255, 255, 255, 0.8); */
 }
 a.lumekka_blue span.btns_label {
     font-size: 35px;
@@ -493,7 +493,7 @@ a.lumekka_red {
     background: -webkit-linear-gradient(90deg, rgba(195,127,128,1) 0%, rgba(178,89,91,1) 30%, rgba(195,127,128,1) 100%);
     background: linear-gradient(90deg, rgba(195,127,128,1) 0%, rgba(178,89,91,1) 30%, rgba(195,127,128,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c37f80",endColorstr="#c37f80",GradientType=1);
-    box-shadow: inset 0px 4px 15px  0 rgba(255, 255, 255, 0.50), inset 0px -12px 25px  0px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 4px 4px 8px  0 rgba(255, 255, 255, 0.80), inset -4px -4px 8px  0px rgba(0, 0, 0, 0.50);
     position: relative;
     transition: all 0.4s;
     animation-name: AniBttn;
@@ -526,8 +526,28 @@ a.lumekka_red p span {
 .spots_btn a {
     margin: 0 0 120px !important;
 }
-.spots_btn a img {
-    width: 100%;
+.spots_btn a .insta_icon {
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px;
+    max-width: 120px;
+}
+.spots_btn a .spots_btn_content {
+    -ms-flex: 0 0 calc(100% - 120px);
+    flex: 0 0 calc(100% - 120px);
+    max-width: calc(100% - 120px);
+    padding: 0 0 0 52px;
+}
+.spots_btn a .spots_btn_content p {
+    text-align: center;
+    font-size: 45px;
+    color: #000000;
+    font-family: a-otf-ryumin-pr6n,serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.spots_btn a .spots_btn_content img {
+    margin: 19px auto 0;
+    max-width: 246px;
 }
 @keyframes AniBttn {
     0% {
@@ -681,6 +701,9 @@ a.lumekka_red p span {
 }
 .have_content h3 span {
     font-size: 50px;
+}
+.have_content h3 span.darktitle_small {
+    font-size: 36px;
 }
 .have_content .troubles_faces {
     margin: 215px auto 0;
@@ -991,7 +1014,7 @@ a.lumekka_red p span {
     object-fit: contain;
 }
 .stain_content_box p {
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 20px;
     color: #000;
     font-family: 'Noto Sans JP', sans-serif;
@@ -1238,7 +1261,7 @@ ul.spot_label li a {
     font-size: 30px;
     font-weight: 600;
     padding: 0 2px;
-        font-family: 'Yu Mincho';
+    font-family: 'Yu Mincho';
     font-weight: 500;
 }
 .spot_heading_text h2 {
@@ -1353,8 +1376,8 @@ ul.spot_label li a {
     top: 0;
     left: 0;
     min-width: 175px;
-    height: 42px;
-    line-height: 42px;
+    height: 40px;
+    line-height: 40px;
     font-size: 30px;
     background-color: #c3af73;
     color: #fff;
@@ -1366,7 +1389,7 @@ ul.spot_label li a {
     font-size: 35px;
 }
 .spot_point li p {
-    font-size: 25px;
+    font-size: 22px;
     color: #595959;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
@@ -1686,8 +1709,6 @@ ul.spot_label li a {
     padding-left: 120px;
     font-family: 'Yu Mincho';
     font-weight: 400;
-    display: inline-block;
-    width: 100%;
 }
 .resion_content_sec h4 span {
     color: #950308;
@@ -1718,7 +1739,7 @@ ul.spot_label li a {
     transform: rotate(90deg);
     position: absolute;
     left: -28px;
-    top: 32px;
+    top: 30px;
     letter-spacing: 5px;
     font-family: 'Yu Mincho';
     font-weight: 400;
@@ -1980,10 +2001,10 @@ ul.spot_label li a {
 .single_faq .single_faq_answer:before {
     content: "A .";
     position: absolute;
-    left: 85px;
-    top: 45px;
+    left: 83px;
+    top: 50px;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 25px;
+    font-size: 32px;
     line-height: 50px;
     color: #595959;
     font-weight: 300;
@@ -2975,7 +2996,10 @@ ul.spot_label li a {
         font-size: 34px;
     }
     .have_content h3 span {
-        font-size: 20px;
+        font-size: 26px;
+    }
+    .have_content h3 span.darktitle_small {
+        font-size: 18px;
     }
     .msg_box_fifth p, .msg_box_forth p, .msg_box_third p, .msg_box_second p, .msg_box_first p {
         font-size: 16px;
@@ -3085,12 +3109,12 @@ ul.spot_label li a {
         margin-top: 50px;
     }
     .type_stains_content h3 {
-        font-size: 18px;
+        font-size: 24px;
         margin-bottom: 30px;
-        line-height: 24px;
+        line-height: 1.8;
     }
     .type_stains_content p {
-        font-size: 16px;
+        font-size: 20px;
     }
     .spot_treatment_section .heading, .people_section h3 {
         font-size: 24px;
@@ -3172,8 +3196,11 @@ ul.spot_label li a {
         height: 40px;
     }
     .spot_phototherapy p {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 35px;
+    }
+    .spot_phototherapy p span {
+        padding: 2px 4px;
     }
     .spot_content {
         padding: 20px 15px;
@@ -3301,7 +3328,31 @@ ul.spot_label li a {
         letter-spacing: 0;
     }
     .spots_btn a {
+        position: relative;
+        border-radius: 16px;
         margin-bottom: 50px !important;
+    }
+    .spots_btn a .insta_icon {
+        -ms-flex: 0 0 62px;
+        flex: 0 0 62px;
+        max-width: 62px;
+    }
+    .spots_btn a .spots_btn_content {
+        -ms-flex: 0 0 calc(100% - 62px);
+        flex: 0 0 calc(100% - 62px);
+        max-width: calc(100% - 62px);
+    }
+    .spots_btn a .spots_btn_content p {
+        font-size: 20px;
+        text-align: left;
+        line-height: 34px;
+    }
+    .spots_btn a .spots_btn_content img {
+        margin: 0;
+        max-width: 100px;
+        position: absolute;
+        right: 18px;
+        bottom: 19px;
     }
     .laser_once_box .spot_heading_text h2 a {
         text-align: center;
@@ -3473,7 +3524,7 @@ ul.spot_label li a {
     }
     .single_faq .single_faq_answer:before {
         left: 22px;
-        top: 9px;
+        top: 12px;
         font-size: 20px;
     }
     .single_faq .single_faq_answer li, .single_faq .single_faq_answer p {
@@ -3493,6 +3544,9 @@ ul.spot_label li a {
     }
     .single_faq .single_faq_answer a.pdf_button {
         margin-top: 0;
+        display: block;
+        float: unset;
+        margin: 20px 0;
     }
     .faq_section {
         padding: 50px 0px 90px;
@@ -3593,6 +3647,7 @@ ul.spot_label li a {
     .introduction_section .lumekka_sec .heading h2 {
         font-size: 20px;
         line-height: 45px;
+        font-weight: bold;
     }
     .introduction_section .lumekka_sec .lumekka_inner h3 {
         font-size: 18px;
@@ -3618,6 +3673,10 @@ ul.spot_label li a {
     }
     a.lumekka_blue {
         margin: 20px 0;
+        box-shadow: inset 2px 2px 4px 0 rgb(255 255 255 / 80%), inset -2px -2px 4px 0px rgb(0 0 0 / 50%);
+    }
+    a.lumekka_red {
+        box-shadow: inset 2px 2px 4px 0 rgb(255 255 255 / 80%), inset -2px -2px 4px 0px rgb(0 0 0 / 50%);
     }
     .lumekka_btns a img {
         max-width: 420px;
@@ -3625,7 +3684,7 @@ ul.spot_label li a {
         width: 100%;
     }
     .coptright_sec p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .your_stain_section:before {
         height: 600px;
@@ -3662,6 +3721,5 @@ ul.spot_label li a {
     a.lumekka_red img {
         max-height: 38px;
     }
-
 }
 /*responsive css end*/
