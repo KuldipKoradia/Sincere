@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
 /*fonts css start*/
-/*
-font-family: a-otf-ryumin-pr6n,serif;
-font-weight: 300;
-font-style: normal;
 
-font-family: vdl-pengentle,sans-serif;
-font-weight: 700;
-font-style: normal;*/
 @font-face {
     font-family: 'Snell Roundhand';
     src: url('../fonts/SnellRoundhand-BoldScript.eot');
@@ -26,28 +19,6 @@ font-style: normal;*/
     url('../fonts/YuMincho-Regular.woff2') format('woff2'),
     url('../fonts/YuMincho-Regular.woff') format('woff'),
     url('../fonts/YuMincho-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'HiraKakuPro-W3';
-    src: url('../fonts/HiraKakuPro-W3-AlphaNum.eot');
-    src: url('../fonts/HiraKakuPro-W3-AlphaNum.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/HiraKakuPro-W3-AlphaNum.woff2') format('woff2'),
-    url('../fonts/HiraKakuPro-W3-AlphaNum.woff') format('woff'),
-    url('../fonts/HiraKakuPro-W3-AlphaNum.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'HiraMaruProN-W4';
-    src: url('../fonts/HiraMaruProN-W4-AlphaNum.eot');
-    src: url('../fonts/HiraMaruProN-W4-AlphaNum.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/HiraMaruProN-W4-AlphaNum.woff2') format('woff2'),
-    url('../fonts/HiraMaruProN-W4-AlphaNum.woff') format('woff'),
-    url('../fonts/HiraMaruProN-W4-AlphaNum.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -966,9 +937,9 @@ a.lumekka_red p span {
     background-color: #c3af73;
     padding: 0 20px;
     border-radius: 38px;
-    margin: auto;
-    position: absolute;
-    top: -35px;
+    margin: 0px auto -65px;
+    position: relative;
+    top: -142px;
     left: 0;
     right: 0;
 }
@@ -2036,7 +2007,7 @@ ul.spot_label li a {
     position: absolute;
     left: 85px;
     top: 45px;
-    font-family: 'HiraKakuPro-W3';
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 25px;
     line-height: 50px;
     color: #595959;
@@ -2387,7 +2358,7 @@ ul.spot_label li a {
     padding: 10px 30px;
     font-size: 27px;
     color: #fff;
-    font-family: 'HiraMaruProN-W4';
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
 }
 .benefits_btns_sec .benefits_btns a.line_btn img {
@@ -2635,7 +2606,8 @@ ul.spot_label li a {
         height: 3px;
     }
     .stain_content_float {
-        top: -25px;
+        top: -75px;
+        margin: 0px auto -51px;
     }
     .stain_content_float p {
         font-size: 32px;
@@ -3109,7 +3081,8 @@ ul.spot_label li a {
         font-size: 28px;
     }
     .stain_content_float {
-        top: -18px;
+        top: -27px;
+        margin: 0px auto -35px;
     }
     .stain_content_float p {
         font-size: 20px;
