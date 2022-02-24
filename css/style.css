@@ -1713,14 +1713,12 @@ ul.spot_label li a {
 }
 .resion_heading p.resion_text {
     font-size: 50px;
+    line-height: 50px;
     color: #950308;
     transform: rotate(90deg);
-    display: table;
     position: absolute;
-    top: 0;
-    left: -33px;
-    bottom: -5px;
-    margin: auto;
+    left: -28px;
+    top: 32px;
     letter-spacing: 5px;
     font-family: 'Yu Mincho';
     font-weight: 400;
@@ -2778,8 +2776,9 @@ ul.spot_label li a {
     }
     .resion_heading p.resion_text {
         font-size: 38px;
-        left: -14px;
-        bottom: -9px;
+        line-height: 38px;
+        left: -15px;
+        top: 42px;
     }
     .resion_heading p.heading_content {
         font-size: 28px;
@@ -3357,8 +3356,9 @@ ul.spot_label li a {
     }
     .resion_heading p.resion_text {
         font-size: 26px;
-        left: -27px;
-        bottom: -5px;
+        line-height: 26px;
+        left: -30px;
+        top: 45px;
     }
     .resion_forth_sec p.resion_text, .resion_second_sec p.resion_text {
         right: -35px;
