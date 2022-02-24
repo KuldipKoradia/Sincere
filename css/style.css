@@ -867,13 +867,13 @@ a.lumekka_red p span {
 }
 .garden_clinic_section h3 .garden_first {
     position: absolute;
-    top: 0;
+    top: 1px;
     left: -34px;
 }
 .garden_clinic_section h3 .garden_second {
     position: absolute;
     right: -35px;
-    bottom: 0;
+    bottom: 1px;
 }
 .garden_clinic_section p {
     font-size: 40px;
