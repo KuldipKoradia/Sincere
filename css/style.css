@@ -1845,7 +1845,7 @@ ul.spot_label li a {
 .resion_forth_sec p.resion_text,
 .resion_second_sec p.resion_text {
     left: auto !important;
-    right: -55px;
+    right: -46px;
 }
 .resion_third_sec {
     margin: 130px 0;
@@ -2839,7 +2839,7 @@ ul.spot_label li a {
         padding-right: calc((100% - 900px) / 2);
     }
     .resion_forth_sec p.resion_text, .resion_second_sec p.resion_text {
-        right: -42px;
+        right: -35px;
     }
     .introduction_section,
     .treatment_steps_section {
@@ -3071,7 +3071,7 @@ ul.spot_label li a {
     }
     .garden_clinic_section h3 span {
         font-size: 42px;
-        line-height: 1;
+        line-height: 45px;
     }
     .garden_clinic_section p {
         font-size: 18px;
@@ -3412,7 +3412,7 @@ ul.spot_label li a {
         top: 45px;
     }
     .resion_forth_sec p.resion_text, .resion_second_sec p.resion_text {
-        right: -35px;
+        right: -33px;
     }
     .resion_heading p.heading_content {
         font-size: 16px;
