@@ -523,36 +523,11 @@ a.lumekka_red p span {
     font-size: 20px;
     line-height: 32px;
 }
-
 .spots_btn a {
-    background-color: #e3d6c5;
     margin: 0 0 120px !important;
-    align-items: center;
-    padding: 36px;
-    border-radius: 30px;
 }
-.spots_btn a .insta_icon {
-    -ms-flex: 0 0 120px;
-    flex: 0 0 120px;
-    max-width: 120px;
-}
-.spots_btn a .spots_btn_content {
-    -ms-flex: 0 0 calc(100% - 120px);
-    flex: 0 0 calc(100% - 120px);
-    max-width: calc(100% - 120px);
-    padding: 0 0 0 52px;
-}
-.spots_btn a .spots_btn_content p {
-    text-align: center;
-    font-size: 45px;
-    color: #000000;
-    font-family: a-otf-ryumin-pr6n,serif;
-    font-weight: 500;
-    line-height: 1.1;
-}
-.spots_btn a .spots_btn_content img {
-    margin: 19px auto 0;
-    max-width: 246px;
+.spots_btn a img {
+    width: 100%;
 }
 @keyframes AniBttn {
     0% {
@@ -1711,6 +1686,8 @@ ul.spot_label li a {
     padding-left: 120px;
     font-family: 'Yu Mincho';
     font-weight: 400;
+    display: inline-block;
+    width: 100%;
 }
 .resion_content_sec h4 span {
     color: #950308;
@@ -2759,7 +2736,6 @@ ul.spot_label li a {
         max-width: 142px;
     }
     .spots_btn a {
-        padding: 28px;
         margin: 0 0 90px !important;
     }
     .spots_btn a .insta_icon {
@@ -3326,32 +3302,7 @@ ul.spot_label li a {
         letter-spacing: 0;
     }
     .spots_btn a {
-        padding: 15px;
-        position: relative;
-        border-radius: 16px;
         margin-bottom: 50px !important;
-    }
-    .spots_btn a .insta_icon {
-        -ms-flex: 0 0 62px;
-        flex: 0 0 62px;
-        max-width: 62px;
-    }
-    .spots_btn a .spots_btn_content {
-        -ms-flex: 0 0 calc(100% - 62px);
-        flex: 0 0 calc(100% - 62px);
-        max-width: calc(100% - 62px);
-    }
-    .spots_btn a .spots_btn_content p {
-        font-size: 16px;
-        text-align: left;
-        line-height: 34px;
-    }
-    .spots_btn a .spots_btn_content img {
-        margin: 0;
-        max-width: 145px;
-        position: absolute;
-        right: 18px;
-        bottom: 19px;
     }
     .laser_once_box .spot_heading_text h2 a {
         text-align: center;
